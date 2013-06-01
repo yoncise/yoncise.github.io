@@ -68,6 +68,7 @@ body {
 }
 
 #wrapper {
+    clear: both;
     display: block;
     word-wrap: break-word;
     width: 960px;
