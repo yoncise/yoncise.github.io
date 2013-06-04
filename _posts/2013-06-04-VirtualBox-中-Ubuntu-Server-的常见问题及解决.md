@@ -48,6 +48,8 @@ sudo vim /etc/default/grub
 
 最后更新下 grub 并重启
 
+[How do I disable the blank console “screensaver” on Ubuntu Server?](http://askubuntu.com/questions/138918/how-do-i-disable-the-blank-console-screensaver-on-ubuntu-server)
+
 {% highlight bash %}
 
 sudo update-grub
