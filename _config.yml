@@ -1,2 +1,4 @@
 name: Yoncise
 paginate: 24
+permalink: /blog/:title.html
+paginate_path: /blog/page:num
