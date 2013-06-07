@@ -32,6 +32,7 @@ body {
     border: 1px solid #bebebe;
     position: absolute;
     top: 29px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 #nav ul li.menu:hover a {
