@@ -235,6 +235,7 @@ body {
 #article pre {
     margin: 0;
     padding: 10px;
+    background: #eee;
 }
 
 #footer {
