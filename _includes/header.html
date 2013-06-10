@@ -1,30 +1,24 @@
 <div id="nav">
     <ul>
         <li>
-        {% if page.current == 'home' %}
-        <a class="current" href="/blog">Home</a>
-        {% else %}
-        <a href="/blog">Home</a>
-        {% endif %}
+        <a {% if page.current == 'home' %} class="current" {% endif %} href="/blog">Home</a>
         </li>
+
         <li class="menu">
-        {% if page.current == 'category' %}
-        <a class="current" href="/blog/category">Category</a>
-        {% else %}
-        <a href="/blog/category">Category</a>
-        {% endif %}
+        <a {% if page.current == 'category' %} class="current" {% endif %} href="/blog/category">Category</a>
         <ul>
             {% for category in site.categories %}
             <li><a href="/blog/category/#{{ category[0] }}">{{ category[0] }}</a></li>
             {% endfor %}
         </ul>
         </li>
+
         <li>
-        {% if page.current == 'about' %}
-        <a class="current" href="/blog/about">About</a>
-        {% else %}
-        <a href="/blog/about">About</a>
-        {% endif %}
+        <a {% if page.current == 'link' %} class="current" {% endif %} href="/blog/link">Link</a>
+        </li>
+
+        <li>
+        <a {% if page.current == 'about' %} class="current" {% endif %} href="/blog/about">About</a>
         </li>
     </ul>
 </div>
