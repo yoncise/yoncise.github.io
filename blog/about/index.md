@@ -3,7 +3,7 @@ layout: post
 title: About Me
 current: about
 ---
-<img src="/blog/images/avatar.jpg" align="middle">
+![Avatar](/blog/images/avatar.jpg)
 
 性别: 男
 
