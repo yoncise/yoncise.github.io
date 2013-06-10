@@ -3,7 +3,7 @@ layout: post
 title: VirtualBox 中 Ubuntu Server 的常见问题及解决
 category: ubuntu
 ---
-##安装 Guest Additions
+## 安装 Guest Additions
 如果虚拟机中安装的是 XP 的话, 只要在菜单中选择安装增强包, 然后打开我的电脑, 双击光驱就可以弹出安装对话框了. 但是在 Ubuntu Server 中则要稍微复杂些, 首先同样是在 Devices 中选择 Install Guest Additions, 与 XP 不同的是, 这里你需要手动挂载光驱.
 
     sudo mount /dev/cdrom /cdrom
@@ -23,7 +23,7 @@ category: ubuntu
 > 
 > [Fix shared folder Ubuntu Guest & Host Virtualbox permission denied](http://cisight.com/fix-shared-folder-ubuntu-guest-host-virtualbox-permission-denied/)
 
-##长时间没有操作后屏幕黑屏
+## 长时间没有操作后屏幕黑屏
 
 解决方法是在 grub 中添加 consoleblank=0 的启动参数.
 
@@ -38,7 +38,7 @@ category: ubuntu
 
 > [How do I disable the blank console “screensaver” on Ubuntu Server?](http://askubuntu.com/questions/138918/how-do-i-disable-the-blank-console-screensaver-on-ubuntu-server)
 
-##添加 Host-only Adapter
+## 添加 Host-only Adapter
 
 首先在 VirtualBox 主界面中打开 File - Preferences.
 
