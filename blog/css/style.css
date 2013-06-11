@@ -48,7 +48,7 @@ body {
     z-index: 1;
 }
 
-#nav ul li a {
+#nav ul li > a {
     font-size: 13px;
     line-height: 27px;
     font-weight: bold;
