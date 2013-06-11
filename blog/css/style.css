@@ -42,7 +42,7 @@ body {
 #nav ul li.menu:hover > a {
     background: #fff;
     position: relative;
-    padding: 2px 9px 1px;
+    padding-bottom: 1px;
     border-left: 1px solid #bebebe;
     border-right: 1px solid #bebebe;
     z-index: 1;
