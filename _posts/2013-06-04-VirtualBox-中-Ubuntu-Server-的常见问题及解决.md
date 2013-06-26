@@ -4,7 +4,9 @@ title: VirtualBox 中 Ubuntu Server 的常见问题及解决
 category: ubuntu
 ---
 ## 安装 Guest Additions
-如果虚拟机中安装的是 XP 的话, 只要在菜单中选择安装增强包, 然后打开我的电脑, 双击光驱就可以弹出安装对话框了. 但是在 Ubuntu Server 中则要稍微复杂些, 首先同样是在 Devices 中选择 Install Guest Additions, 与 XP 不同的是, 这里你需要手动挂载光驱.
+
+如果虚拟机中安装的是 XP 的话, 只要在菜单中选择安装增强包, 然后打开我的电脑, 双击光驱就可以弹出安装对话框了.
+但是在 Ubuntu Server 中则要稍微复杂些, 首先同样是在 Devices 中选择 Install Guest Additions, 与 XP 不同的是, 这里你需要手动挂载光驱.
 
     sudo mount /dev/cdrom /cdrom
 
