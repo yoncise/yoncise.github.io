@@ -5,12 +5,13 @@ title: DNS 和 Nameserver 的区别
 ---
 ## 名词解释
 
-- DNS: DNS 的全称是 Domain Name *System*, 很多人会误以为是 Domain Name *Server*.
+- *DNS*
+    DNS 的全称是 Domain Name *System*, 很多人会误以为是 Domain Name *Server*.
 DNS 是一个系统, 负责将域名与 IP 地址相对应起来.
-
-- Nameserver: 负责实现 DNS 这套系统的服务器, 有时候也叫做 DNS server, 这也是为什么许多人会将 nameserver 同 DNS 搞混起来的原因.
-
-- Zone: 假如有一个域名 bob.sales.example.com, 那么 com 是一个顶级域名(<acronym title="Top Level Doamin">TLD</acronym>), 
+- *Nameserver*
+    负责实现 DNS 这套系统的服务器, 有时候也叫做 DNS server, 这也是为什么许多人会将 nameserver 同 DNS 搞混起来的原因.
+- *Zone*
+    假如有一个域名 bob.sales.example.com, 那么 com 是一个顶级域名(<acronym title="Top Level Doamin">TLD</acronym>), 
 example 是 com 的一个子域名(Sub-domain), sales 是 example 的子域名, bob 则是一个主机名(Hostname). 一个域名至少有一个子域名.
 除了主机名, 一个域名的其它部分都可以叫做 Zone. 
 
@@ -21,7 +22,6 @@ Nameserver 主要有四种类型:
 1. **Master**
 
     保存域名的解析信息, 并负责响应其它 Nameserver 查询域名信息的请求.
-
 2. **Slave**
 
     同 Master 的作用, 作为备用. 区别在于它的解析信息是从 Master 中获取的.
@@ -36,7 +36,7 @@ Google 的 nameserver(8.8.8.8) 就是这种类型.
 
     将解析请求转发给一串指定的 nameservers, 如果这其中没有一个能解析成功, 那么这次请求就算失败.
 
-*ps. 一台 nameserver 可能是这个域名的 Master, 同时, 也可能是另一个域名的 Slave.
+*ps. 一台 nameserver 可能是这个域名的 Master, 同时, 也可能是另一个域名的 Slave.*
 
 ## 如何搭建一个 nameserver
 
