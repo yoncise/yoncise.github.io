@@ -51,11 +51,11 @@ Google 的 nameserver(8.8.8.8) 就是这种类型.
 
 ## 两个例子
 
-1. 当你在域名注册商那里注册了一个域名 example.com, 你在域名注册商那里修改 nameserver, 
+一, 当你在域名注册商那里注册了一个域名 example.com, 你在域名注册商那里修改 nameserver, 
 比如修改成 ns1.example.com, ns2.example.com, 其实就相当于在负责 com 解析的那台 nameserver 上修改你的 example.com 的解析信息.
 你在 ns1.example.com, ns2.example.com 里添加的比如 A 记录, CNAME 记录, 就是具体关于 example.com 这个域名的解析信息.
 
-2. 假如你电脑里配置的 Caching-only nameserver 是 8.8.8.8, 当你请求访问比如 yoncise.com 这个域名, 
+二, 假如你电脑里配置的 Caching-only nameserver 是 8.8.8.8, 当你请求访问比如 yoncise.com 这个域名, 
 你的电脑就会向 8.8.8.8 发出域名解析请求, 假如 8.8.8.8 发现自己的数据库里没有相关的解析请求, 
 就会向 root nameserver 发出请求, root nameserver 发现它也没有 yoncise.com 的解析信息, 
 但是它知道负责解析 com 域名的 nameserver 的地址, 于是将这个地址返回, 
