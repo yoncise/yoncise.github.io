@@ -220,6 +220,10 @@ body {
     text-indent: 0;
 }
 
+#article ul > p, ol > p {
+    text-indent: 0;
+}
+
 #article p {
     text-indent: 2em;
 }
