@@ -220,16 +220,16 @@ body {
     text-indent: 0;
 }
 
-#article ul > p, ol > p {
-    text-indent: 0;
-}
-
 #article p {
     text-indent: 2em;
 }
 
 #article p img {
     margin-left: -2em;
+}
+
+#article li > p {
+    text-indent: 0;
 }
 
 #article blockquote {
