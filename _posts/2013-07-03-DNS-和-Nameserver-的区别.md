@@ -57,4 +57,6 @@ Google 的 nameserver(8.8.8.8) 就是这种类型.
 于是将这个 nameserver (在域名注册商那里设置的地址) 返回, 同样的, 8.8.8.8 继续向这个 nameserver 发送请求, 
 最终获得了 yoncise.com 的域名解析信息并将数据返回给你.
 
+## 参考
+
 > [Introduction to DNS](http://www.centos.org/docs/5/html/5.2/Deployment_Guide/s1-bind-introduction.html)
