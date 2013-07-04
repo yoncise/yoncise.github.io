@@ -221,17 +221,8 @@ body {
 }
 
 #article p {
-    text-indent: 2em;
     line-height: 24px;
-    margin: 8px 0;
-}
-
-#article p img {
-    margin-left: -2em;
-}
-
-#article li p {
-    text-indent: 0;
+    margin: 12px 0;
 }
 
 #article blockquote {
