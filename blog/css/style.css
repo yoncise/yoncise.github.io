@@ -222,6 +222,7 @@ body {
 
 #article p {
     text-indent: 2em;
+    line-height: 24px;
 }
 
 #article p img {
