@@ -9,7 +9,7 @@ modified: 2013-07-04
 - **DNS**
 
     DNS 的全称是 Domain Name *System*, 很多人会误以为是 Domain Name *Server*.
-DNS 是一个系统, 负责将域名与 IP 地址相对应起来.
+DNS 是一套系统, 负责将域名与 IP 地址相对应起来.
 
 - **Nameserver**
 
@@ -17,7 +17,7 @@ DNS 是一个系统, 负责将域名与 IP 地址相对应起来.
 
 - **Zone**
 
-    假如有一个域名 bob.sales.example.com, 那么 com 是一个顶级域名(<acronym title="Top Level Doamin">TLD</acronym>), 
+    假如有一个域名 bob.sales.example.com, 那么 com 是一个顶级域名(<acronym title="Top Level Domain">TLD</acronym>), 
 example 是 com 的一个子域名(Sub-domain), sales 是 example 的子域名, bob 则是一个主机名(Hostname). 一个域名至少有一个子域名.
 除了主机名, 一个域名的其它部分都可以叫做 Zone. 
 
