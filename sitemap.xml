@@ -5,32 +5,38 @@ layout: nil
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>http://www.yoncise.com/blog/</loc>
-        <lastmod>{{ site.time | date_to_xmlschema}}</lastmod>
+        <lastmod>{{ site.time | date: "%F"}}</lastmod>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
         <loc>http://www.yoncise.com/blog/about/</loc>
-        <lastmod>{{ site.time | date_to_xmlschema}}</lastmod>
+        <lastmod>{{ site.time | date: "%F"}}</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>http://www.yoncise.com/blog/category/</loc>
-        <lastmod>{{ site.time | date_to_xmlschema}}</lastmod>
+        <lastmod>{{ site.time | date: "%F"}}</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>http://www.yoncise.com/blog/link/</loc>
-        <lastmod>{{ site.time | date_to_xmlschema}}</lastmod>
+        <lastmod>{{ site.time | date: "%F"}}</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
     </url>
     {% for post in site.posts %}
     <url>
         <loc>http://www.yoncise.com{{ post.url }}</loc>
-        <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
+        <lastmod>
+            {% if post.modified %}
+            {{ post.modified | date: "%F" }}
+            {% else %}
+            {{ post.date | date: "%F" }}
+            {% endif %}
+        </lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
     </url>

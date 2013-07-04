@@ -2,6 +2,7 @@
 layout: post
 category: ubuntu
 title: OpenShot 安装 libx264 和 libmp3lame 库
+modified: 2013-07-04
 ---
 
 统计大作业需要录制演示视频, 使用 [Camstudio](http://camstudio.org) 录制的视频有些多余的部分需要剪掉, Ubuntu 下也没什么好的剪辑工具, 下了个 OpenShot 试了下, 功能是简陋了点, 不过还算能用. 就是导出视频的时候提示我没有 libx264 和 libmp3lame 库.
