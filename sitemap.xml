@@ -5,25 +5,25 @@ layout: nil
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>http://www.yoncise.com/blog/</loc>
-        <lastmod>{{ site.time | date: "%F"}}</lastmod>
+        <lastmod>{{ site.time | date: "%Y-%m-%d"}}</lastmod>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
         <loc>http://www.yoncise.com/blog/about/</loc>
-        <lastmod>{{ site.time | date: "%F"}}</lastmod>
+        <lastmod>{{ site.time | date: "%Y-%m-%d"}}</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>http://www.yoncise.com/blog/category/</loc>
-        <lastmod>{{ site.time | date: "%F"}}</lastmod>
+        <lastmod>{{ site.time | date: "%Y-%m-%d"}}</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>http://www.yoncise.com/blog/link/</loc>
-        <lastmod>{{ site.time | date: "%F"}}</lastmod>
+        <lastmod>{{ site.time | date: "%Y-%m-%d"}}</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
     </url>
@@ -32,9 +32,9 @@ layout: nil
         <loc>http://www.yoncise.com{{ post.url }}</loc>
         <lastmod>
             {% if post.modified %}
-            {{ post.modified | date: "%F" }}
+            {{ post.modified | date: "%Y-%m-%d" }}
             {% else %}
-            {{ post.date | date: "%F" }}
+            {{ post.date | date: "%Y-%m-%d" }}
             {% endif %}
         </lastmod>
         <changefreq>monthly</changefreq>

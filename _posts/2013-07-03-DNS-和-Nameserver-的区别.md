@@ -2,6 +2,7 @@
 layout: post
 category: network
 title: DNS 和 Nameserver 的区别
+modified: 2013-07-04
 ---
 ## 名词解释
 
