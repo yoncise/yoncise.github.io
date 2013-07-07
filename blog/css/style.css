@@ -143,6 +143,11 @@ body {
 
 #pagination a {
     color: #444;
+    text-decoration: none;
+}
+
+#pagination a:hover {
+    text-decoration: underline;
 }
 
 #pagination .page_number {
