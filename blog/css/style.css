@@ -244,6 +244,10 @@ body {
     background: #eee;
 }
 
+#disqus_thread {
+    margin-top: 48px;
+}
+
 #footer {
     text-align: center;
     font-size: small;
