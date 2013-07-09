@@ -8,7 +8,7 @@ title: abbr 和 acronym 的区别
     acronym 指的是首字母的缩写, 而且这类缩写的读音与原本的单词的发音是不一样的. 比如:
 
     - FBI, 表示 Federal Bureau of Investigation, 读作 ef-bee-I
-    - NATO, 表示 stands for North Atlantic Treaty Organization, 读作 NAY-toe
+    - NATO, 表示 North Atlantic Treaty Organization, 读作 NAY-toe
     - IUPAC, 表示 International Union of Pure and Applied Chemistry, 读作 I-U-pak
 
 - **abbr**
