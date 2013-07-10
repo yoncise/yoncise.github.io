@@ -2,6 +2,7 @@
 layout: post
 title: Link
 current: link
+comment: false
 ---
 [Bookmarklet Builder](http://subsimple.com/bookmarklets/jsbuilder.htm)
 

@@ -11,5 +11,7 @@ layout: default
     {{ content }}
     </span>
 
+    {% if page.comment != false %}
     {% include disqus.html %}
+    {% endif %}
 </div>
