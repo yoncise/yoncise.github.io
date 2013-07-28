@@ -20,7 +20,7 @@ modified: 2013-07-04
 
 但是你可能会发现你无法切换到你的共享文件夹中, 原因是当前用户不在 vboxsf 这个组中. 使用下面的命令将当前用户加到 vboxsf 组中.
 
-    sudo usermod -G vboxsf -a 
+    sudo usermod -G vboxsf -a ACCOUNT
 
 > [VirtualBox Shared Folders with Ubuntu Server Guest](http://ipggi.wordpress.com/2010/03/11/virtualbox-shared-folders-with-ubuntu-server-guest/)
 > 
