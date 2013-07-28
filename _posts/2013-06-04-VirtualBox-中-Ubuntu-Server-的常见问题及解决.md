@@ -1,7 +1,7 @@
 ---
 layout: post
 title: VirtualBox 中 Ubuntu Server 的常见问题及解决
-category: ubuntu
+category: notes
 modified: 2013-07-28
 ---
 ## 安装 Guest Additions

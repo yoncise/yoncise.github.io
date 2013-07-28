@@ -1,6 +1,6 @@
 ---
 layout: post
-category: ubuntu
+category: notes
 title: OpenShot 安装 libx264 和 libmp3lame 库
 modified: 2013-07-04
 ---
