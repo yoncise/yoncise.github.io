@@ -1,5 +1,5 @@
 name: Yoncise
-paginate: 24
+paginate: 10
 markdown: rdiscount
 permalink: /blog/:title.html
 paginate_path: /blog/page:num
