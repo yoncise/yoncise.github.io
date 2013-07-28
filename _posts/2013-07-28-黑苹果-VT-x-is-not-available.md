@@ -9,7 +9,7 @@ category: macintosh
 
 解决方法是:
 
-进入 ~/VirtualBox VMs/HOSTNAME 目录, 用 Vim 或者其他文本编辑文件打开 *.vbox 文件, 找到下面这一行:
+进入 ~/VirtualBox VMs/HOSTNAME 目录, 用 Vim 或者其他文本编辑工具打开 *.vbox 文件, 找到下面这一行:
 
     <HardwareVirtEx enabled="true"
 
