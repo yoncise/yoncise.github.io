@@ -1,6 +1,6 @@
 ---
 layout: post
-category: network
+category: notes
 title: DNS 和 Nameserver 的区别
 modified: 2013-07-04
 ---

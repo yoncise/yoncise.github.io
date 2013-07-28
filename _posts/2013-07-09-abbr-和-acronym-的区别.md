@@ -1,6 +1,6 @@
 ---
 layout: post
-category: html
+category: notes
 title: abbr 和 acronym 的区别
 ---
 - **acronym**
