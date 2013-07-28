@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 黑苹果 VT-x is not available (VERR_VMX_NO_VMX)
-category: Hackintosh
+category: macintosh
 ---
 折腾了几天终于在 x201i 上安装好了黑苹果, 驱动什么的基本完美, 已经能满足我日常使用了.
 
