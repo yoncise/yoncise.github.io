@@ -18,9 +18,9 @@ current: home
     <div id="pagination">
         {% if paginator.previous_page %}
         {% if paginator.previous_page == 1 %}
-        <a class="previous" href="/blog">Previous</a>
+        <a class="previous" href="/blog/">Prev</a>
         {% else %}
-        <a class="previous" href="/blog/{{ paginator.previous_page_path }}">Previous</a>
+        <a class="previous" href="/blog/{{ paginator.previous_page_path }}">Prev</a>
         {% endif %}
         {% else %}
         <span class="prev">Prev</span>
