@@ -12,8 +12,9 @@ E:\htdocs, 并找到下面这行代码:
     #
     # This should be changed to whatever you set DocumentRoot to.
     #
+    <Directory xxx>
 
-将这段代码下面的 <Director xxx> 中的 xxx 修改为 E:\htdocs 就可以了, 但是这样修改之后 Apache 就启动不了了, 
+将其中的 xxx 修改为 E:\htdocs 就可以了, 但是这样修改之后 Apache 就启动不了了, 
 提示我 Requested operation has failed.
 
 最后发现原来是要使用共享目录的网络地址才行, 比如我对应的地址是 //VBOXSVR/Downloads/htdocs, 
