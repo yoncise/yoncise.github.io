@@ -20,7 +20,7 @@ current: home
         {% if paginator.previous_page == 1 %}
         <a class="previous" href="/blog/">Prev</a>
         {% else %}
-        <a class="previous" href="/blog/{{ paginator.previous_page_path }}">Prev</a>
+        <a class="previous" href="{{ paginator.previous_page_path }}">Prev</a>
         {% endif %}
         {% else %}
         <span class="prev">Prev</span>
@@ -29,7 +29,7 @@ current: home
         <span class="page_number ">{{ paginator.page }} of {{ paginator.total_pages }}</span>
 
         {% if paginator.next_page %}
-        <a class="next" href="/blog/{{ paginator.next_page_path }}">Next</a>
+        <a class="next" href="{{ paginator.next_page_path }}">Next</a>
         {% else %}
         <span class="next ">Next</span>
         {% endif %}
