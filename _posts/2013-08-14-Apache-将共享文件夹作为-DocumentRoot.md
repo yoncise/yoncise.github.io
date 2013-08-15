@@ -7,7 +7,7 @@ modified: 2013-08-15
 VirtualBox 中安装了 Windows XP, 并设置了共享文件夹. 最近想用虚拟机搭建 Apache + PHP + MySQL 服务器, 
 并且我希望将 Apache 中默认的 htdocs 目录修改为我的共享文件夹, 这样我就可以在本机里编程, 仅仅将虚拟机作为服务器.
 
-假如我虚拟机中共享目录的地址为 E:\htdocs, 我本以为只要将 Apache 的配置文件 httpd.conf 中的 DocumentRoot 的值修改为 
+假如我虚拟机中共享文件夹的地址为 E:\htdocs, 我本以为只要将 Apache 的配置文件 httpd.conf 中的 DocumentRoot 的值修改为 
 E:\htdocs, 然后找到下面这行代码:
 
     #
