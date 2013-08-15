@@ -18,8 +18,8 @@ E:\htdocs, 然后找到下面这行代码:
 将其中的 xxx 修改为 E:\htdocs 就可以了, 但是这样修改之后 Apache 就启动不了了, 
 提示我 The requested operation has failed!
 
-最后发现原来是要使用共享目录的网络地址才行, 比如我对应的地址是 //VBOXSVR/Downloads/htdocs, 
+最后发现原来是要使用共享文件夹的网络地址才行, 比如我对应的地址是 //VBOXSVR/Downloads/htdocs, 
 只要用这个网络地址替换刚才的 E:\htdocs 就可以正常启动 Apache 了.
 
 ps. *在 httpd.conf 中, 地址分隔符是用的正斜杠 (/), 而不是反斜杠 (\\).* 我一开始使用 \\\\VBOXSVR\Downloads\htdocs, Apache 一样启动不了.
-所以说, 就算 DocumentRoot 可以用 E:\htdocs 这样的地址来指向共享目录, 也应该修改成 E:/htdocs 才行.
+所以说, 就算 DocumentRoot 可以用 E:\htdocs 这样的地址来指向共享文件夹, 也应该修改成 E:/htdocs 才行.
