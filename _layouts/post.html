@@ -10,8 +10,8 @@ layout: default
     <span itemprop="articleBody">
     {{ content }}
     </span>
-
-    {% if page.comment != false %}
-    {% include disqus.html %}
-    {% endif %}
 </div>
+
+{% if page.comment != false %}
+{% include disqus.html %}
+{% endif %}
