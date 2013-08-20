@@ -5,19 +5,17 @@
         <link rel="stylesheet" type="text/css" href="/blog/css/style.css" />
         <link rel="author" href="https://profiles.google.com/110726901055624948847" />
         <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.name }}</title>
-        <script type="text/javascript">
 
-            var _gaq = _gaq || [];
-            _gaq.push(['_setAccount', 'UA-41514522-1']);
-            _gaq.push(['_trackPageview']);
-
+        <script>
+            var _hmt = _hmt || [];
             (function() {
-             var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-             ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-             var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-             })();
+              var hm = document.createElement("script");
+              hm.src = "//hm.baidu.com/hm.js?3b9def1ab8fd3ad053e699ae9084e7ad";
+              var s = document.getElementsByTagName("script")[0]; 
+              s.parentNode.insertBefore(hm, s);
+            })();
+        </script>
 
-         </script>
      </head>
      <body>
          <div id="header">
@@ -31,5 +29,6 @@
          <div id="footer">
              {% include footer.html %}
          </div>
+         
      </body>
  </html>
