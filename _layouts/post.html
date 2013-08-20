@@ -8,7 +8,9 @@ layout: default
     <time>{{ page.date | date_to_string }}</time>
     {% endif %}
 
+    <section>
     {{ content }}
+    </section>
 </article>
 
 {% if page.comment != false %}

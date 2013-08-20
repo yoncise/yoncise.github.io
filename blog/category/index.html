@@ -10,7 +10,7 @@ current: category
     {% for post in category[1] %}
         <li>
         <a href="{{ post.url }}">{{ post.title }}</a>
-        <span class="date">{{ post.date | date_to_string }}</span>
+        <time>{{ post.date | date_to_string }}</time>
         </li>
     {% endfor %}
     </ul>
