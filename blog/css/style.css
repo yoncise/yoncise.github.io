@@ -88,7 +88,7 @@ nav ul li ul {
     display: none;
 }
 
-#wrapper {
+main {
     clear: both;
     display: block;
     word-wrap: break-word;
