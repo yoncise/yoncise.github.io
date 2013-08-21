@@ -85,6 +85,7 @@ nav ul li ul li a {
 }
 
 nav ul li ul {
+    text-transform: capitalize;
     display: none;
 }
 
@@ -179,6 +180,7 @@ nav ul li ul {
     border-left: 4px solid #2d2d2d;
     padding-left: 10px;
     margin-top: 12px;
+    text-transform: capitalize;
 }
 
 #category ul + .category_name {
