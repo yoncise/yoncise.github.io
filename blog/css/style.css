@@ -1,10 +1,10 @@
 body {
     margin: 0;
-    font-family: Palatino, "Microsoft Yahei", sans-serif;
 }
 
 nav {
     height: 29px;
+    font-family: Arial;
     background: #2d2d2d;
     border-bottom: 1px solid #000;
 }
@@ -89,6 +89,7 @@ nav ul li ul {
 }
 
 #main {
+    font-family: Georgia, "Microsoft Yahei"
     clear: both;
     display: block;
     word-wrap: break-word;
