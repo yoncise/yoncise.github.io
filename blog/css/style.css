@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    font-family: Georgia, "Microsoft Yahei";
 }
 
 nav {
@@ -90,7 +91,6 @@ nav ul li ul {
 }
 
 #main {
-    font-family: Georgia, "Microsoft Yahei";
     clear: both;
     display: block;
     word-wrap: break-word;
