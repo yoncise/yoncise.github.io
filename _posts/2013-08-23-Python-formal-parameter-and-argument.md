@@ -14,7 +14,7 @@ category: notes
 
 1. **Default Argument**
 
-    f(), 传入了一个 Default Argument, name 的值为我在定义函数 f 时指定的 2.
+    f(), 传入了一个 Default Argument, name 的值为定义函数 f 时指定的 2.
 
 2. **Positional Argument**
 
