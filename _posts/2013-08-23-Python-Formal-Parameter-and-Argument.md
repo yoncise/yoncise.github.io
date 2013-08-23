@@ -3,7 +3,7 @@ layout: post
 title: Python Formal Parameter and Argument
 category: notes
 ---
-首先我们先定义一个函数:
+首先, 我们定义一个函数:
 
     def f(name = 2, *arguments, **keywords):
         print name
