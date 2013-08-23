@@ -10,31 +10,31 @@ category: notes
         print arguments
         print keywords
 
-## 三种 Arguments (实参)
+## 三种 Argument (实参)
 
-1. **Default Arguments**
+1. **Default Argument**
 
     f(), 传入了一个 Default Argument, name 的值为我在定义函数 f 时指定的 2.
 
-2. **Positional Arguments**
+2. **Positional Argument**
 
     f(4), 传入一个 Positional Argument, name 的值为 4.
 
-3. **Keyword Arguments**
+3. **Keyword Argument**
 
     f(name = 24), 传入一个 Keyword Argument, name 的值为 24.
 
-    同一个 Argument 只能被复制一次:
+    同一个 Argument 只能被赋值一次:
 
         f(4, name = 24)
     
     这条语句非法, 因为 name 被赋值了两次, 第一次是 Positional Argument, 第二次是 Keyword Argument.
 
-    Keyword Arguments 必须接在 Positional Arguments 的后面, 下面一条语句非法:
+    Keyword Argument 必须接在 Positional Argument 的后面, 下面一条语句非法:
 
         f(name = 24, 4)
 
-## 三种 Formal Parameters (形参)
+## 三种 Formal Parameter (形参)
 
 1. **形如 name**
 
@@ -42,8 +42,8 @@ category: notes
 
 2. **形如 *arguments**
 
-    这种类型的形参就像个收容所, 收容那些没有匹配成功的 Positonal Arguments, 
-    其值为没匹配成功的 Positional Arguments 组成的 tuple.
+    这种类型的形参就像个收容所, 收容那些没有匹配成功的 Positonal Argument, 
+    其值为没匹配成功的 Positional Argument 组成的 Tuple.
 
         f(4, 5, 6, k = 7)
 
@@ -57,7 +57,7 @@ category: notes
         def bar(*args = (2, 4)):
             pass
 
-    那么我们可不可以通过 keyword argument 来传参呢, 例如:
+    那么我们可不可以通过 Keyword Argument 来传参呢, 例如:
 
         f(arguments = (2, 4))
 
@@ -66,8 +66,8 @@ category: notes
 
 3. **形如 \**keywords**
 
-    这种 Parameter 和上面一种差不多, 只不过它收容的是所有未匹配成功的 Keyword Arguments, 
-    其值为没匹配成功的 Keyword Arguments 组成的 Dictionary.
+    这种 Parameter 和上面一种差不多, 只不过它收容的是所有未匹配成功的 Keyword Argument, 
+    其值为没匹配成功的 Keyword Argument 组成的 Dictionary.
 
         f(name = 24, m = 2, d = 4)
 
