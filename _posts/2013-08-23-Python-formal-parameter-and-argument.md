@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Python formal parameter and argument
+title: Python Formal Parameter and Argument
 category: notes
 ---
 首先我们先定义一个函数:
@@ -64,7 +64,7 @@ category: notes
     上面这条语句并不会报错, 但是你会发现 arguments 的值仍然为 (), 空的 Tuple, 为什么会这样呢? 
     这和下面一种 Parameter 有关.
 
-3. **形如 **keywords**
+3. **形如 \**keywords**
 
     这种 Parameter 和上面一种差不多, 只不过它收容的是所有未匹配成功的 Keyword Arguments, 
     其值为没匹配成功的 Keyword Arguments 组成的 Dictionary.
