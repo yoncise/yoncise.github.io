@@ -89,8 +89,8 @@ PEP 253 中的算法也很简单, 就是先对继承图做 classic 算法得到�
 
 但在 Python 2.2 中你会得到的是 [Z, X, Y, A, B, O] (可以用 Z.\__mro__ 来得到)
 
-网络上基本找不到与 Python 2.2 中实际采用的 MRO 算法相关的结果, Guido 说这个算法是来源于 "Putting Metaclasses to Work" 这本书, 
-我比较懒, 于是就去看 Python 2.2 的源代码了. 关于 new-style class 的 MRO 的算法在 Object/typeobject.c 中, 
+网络上基本找不到与 Python 2.2 中实际采用的 MRO 算法相关的结果, 虽然 Guido 说这个算法是来源于 "Putting Metaclasses to Work" 这本书, 
+但我们是在研究实际中使用的算法, 还是看 Python 2.2 的源代码吧. 关于 new-style class 的 MRO 的算法在 Object/typeobject.c 中, 
 主要和下面这两个函数有关:
 
     static int
