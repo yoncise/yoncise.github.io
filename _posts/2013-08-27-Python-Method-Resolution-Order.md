@@ -59,7 +59,8 @@ PEP 253 中的算法也很简单, 就是先对继承图做 classic 算法得到�
 ### Implemented
 
 按照 Guido van Rossum 的说法, 之所以 PEP 253 中的算法和实际中的算法不一样是因为, 
-他觉得实际中的算法描述起来比较繁琐, 并且他觉得两种算法没多大区别. 真的没多大区别么? 让我们来看下面这个例子:
+他觉得实际中的算法描述起来比较繁琐, 并且他觉得两种算法没多大区别. 后来 Guido 自己也承认当时想法太天真了. 
+让我们用下面这个例子来说明两种算法之间的区别:
 
     O = object
     class A(O):
@@ -86,11 +87,11 @@ PEP 253 中的算法也很简单, 就是先对继承图做 classic 算法得到�
 
 你用 PEP 253 中的算法得到的 MRO 应该是这样的, [Z, X, Y, B, A, O]
 
-但在 Python 2.2 中你会得到的是 [Z, X, Y, A, B, O] (可以用 Z.__mro__ 来得到)
+但在 Python 2.2 中你会得到的是 [Z, X, Y, A, B, O] (可以用 Z.\__mro__ 来得到)
 
 网络上基本找不到与 Python 2.2 中实际采用的 MRO 算法相关的结果, Guido 说这个算法是来源于 "Putting Metaclasses to Work" 这本书, 
 我比较懒, 于是就去看 Python 2.2 的源代码了. 关于 new-style class 的 MRO 的算法在 Object/typeobject.c 中, 
-主要和下面两个函数有关:
+主要和下面这两个函数有关:
 
     static int
     conservative_merge(PyObject *left, PyObject *right)
@@ -180,7 +181,7 @@ PEP 253 中的算法也很简单, 就是先对继承图做 classic 算法得到�
             return result;
     }
 
-C 代码看起来比较繁琐, 用 Python 来描述大概就是这样:
+C 代码看起来比较繁琐, 用 Python 来描述大概就是这样的:
 
     def conservative_merge(left, right):
         for i in range(0, len(left)):
@@ -213,9 +214,8 @@ C 代码看起来比较繁琐, 用 Python 来描述大概就是这样:
 
 1. 假设 MRO 使用 List 来表示
 2. 假设每个 Class object 有两个属性 bases 和 mro, 分别表示这个类直接继承的类的列表和这个类的 MRO.
-3. 我去除了所有的错误检查, 这样代码看起来比较简洁
 
-自己用这个算法试着计算下面这个列子的 MRO:
+你可以试着用这个算法计算下面这个例子里 Z 的 MRO:
 
     class A(object):
         pass
@@ -236,7 +236,7 @@ C 代码看起来比较繁琐, 用 Python 来描述大概就是这样:
     class Z(K1,K2,K3):
         pass
 
-Python 2.2 new-style 会给出的 MRO 是 [Z, K1, K3, A, K2, D, B, C, E, O]
+Python 2.2 给出的 MRO 是 [Z, K1, K3, A, K2, D, B, C, E, O]
 
 ## Python 2.3 new-style
 
