@@ -2,6 +2,7 @@
 layout: post
 title: Python Formal Parameter and Argument
 category: notes
+modified: 2013-08-28
 ---
 首先, 我们定义一个函数:
 
@@ -42,7 +43,7 @@ category: notes
 
 2. **形如 *arguments**
 
-    这种类型的形参就像个收容所, 收容那些没有匹配成功的 Positonal Argument, 
+    这种类型的形参就像个收容所, 收容那些没有匹配成功的 Positional Argument, 
     其值为没匹配成功的 Positional Argument 组成的 Tuple.
 
         f(4, 5, 6, k = 7)

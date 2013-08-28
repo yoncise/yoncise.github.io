@@ -2,11 +2,12 @@
 layout: post
 title: Python Method Resoluton Order
 category: notes
+modified: 2013-08-28
 ---
 面向对象语言中, 为了找到一个方法的定义, 搜索继承图的顺序叫做 MRO (Method Resolution Order), 
 对于只支持单继承的语言, MRO 没什么好说的. 但对于支持多继承的语言, 比如 Python, MRO 就有搞头了.
 
-在 Python 的发展过程中至少有三种 MRO 的算法: classic, Python 2.2 new-style, Pyhon 2.3 new-style (a.k.a C3).
+在 Python 的发展过程中至少有三种 MRO 的算法: Classic, Python 2.2 new-style, Pyhon 2.3 new-style (a.k.a C3).
 
 ## Classic
 
@@ -26,7 +27,7 @@ category: notes
     class D(B, C):
         pass
 
-用 classic 算法得到的顺序是 [D, B, A, C, A], 没错, A 出现了两次.
+用 Classic 算法得到的顺序是 [D, B, A, C, A], 没错, A 出现了两次.
 
 ## Python 2.2 new-style
 
@@ -35,7 +36,7 @@ Python 2.2 中 new-style class 的 MRO 算法有两个版本, 一种是在 [PEP 
 
 ### Documented
 
-PEP 253 中的算法也很简单, 就是先对继承图做 classic 算法得到可能有重复元素的 MRO, 然后将重复元素去掉, 
+PEP 253 中的算法也很简单, 就是先对继承图做 Classic 算法得到可能有重复元素的 MRO, 然后将重复元素去掉, 
 仅保留最后一次出现的元素, 这样得到的就是最终的 MRO.
 
 我们将上面一个例子修改下以使用 new-style class:
@@ -53,7 +54,7 @@ PEP 253 中的算法也很简单, 就是先对继承图做 classic 算法得到�
     class D(B, C):
         pass
 
-按照 PEP 253 的描述, 先用 classic 算法得到 MRO, [D, B, A, C, A], 
+按照 PEP 253 的描述, 先用 Classic 算法得到 MRO, [D, B, A, C, A], 
 将重复元素去掉, 仅保留最后一次出现的元素, 这里我们去掉第一次出现的 A, 得到最终的 MRO, [D, B, C, A].
 
 ### Implemented
