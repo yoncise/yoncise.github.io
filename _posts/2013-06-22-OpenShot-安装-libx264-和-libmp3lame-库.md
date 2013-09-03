@@ -1,6 +1,6 @@
 ---
 layout: post
-category: notes
+category: Tech
 title: OpenShot 安装 libx264 和 libmp3lame 库
 modified: 2013-07-04
 ---

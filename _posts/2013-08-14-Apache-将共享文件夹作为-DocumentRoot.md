@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Apache 将共享文件夹作为 DocumentRoot
-category: notes
+category: Tech
 modified: 2013-08-15
 ---
 VirtualBox 中安装了 Windows XP, 并设置了共享文件夹. 最近想用虚拟机搭建 Apache + PHP + MySQL 服务器, 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: PHP 安装 MySQL extension
-category: notes
+category: Tech
 ---
 几乎所有网上都是说, 打开 php.ini, 找到下面这一行
 

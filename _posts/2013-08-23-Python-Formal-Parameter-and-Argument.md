@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Python Formal Parameter and Argument
-category: notes
+category: Tech
 modified: 2013-08-28
 ---
 首先, 我们定义一个函数:
