@@ -192,7 +192,7 @@ C 代码看起来比较繁琐, 用 Python 来描述大概就是这样的:
                     temp = []
                     for r in range(0, j):
                         rr = right[r]
-                        if (rr not in left):
+                        if rr not in left:
                             temp.append(rr)
                     left[i:i] = temp
                     right[0:j+1] = []
