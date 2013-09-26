@@ -11,12 +11,12 @@ modified: 2013-07-28
 
     sudo mount /dev/cdrom /media/cdrom
 
-挂载成功之后进入 /cdrom 文件夹并执行 VBoxLinuxAdditions.run 脚本.
+挂载成功之后进入 /media/cdrom 文件夹并执行 VBoxLinuxAdditions.run 脚本.
 
     cd /media/cdrom
     sudo ./VBoxLinuxAdditions.run
 
-至此增强包安装完成. 之后你就可以进行共享文件夹的设置了, 设置完成后, 共享文件夹位于 /media 目录下, 以 sf_ 开头.
+至此增强包安装完成. 重启之后你就可以进行共享文件夹的设置了, 设置完成后, 共享文件夹位于 /media 目录下, 以 sf_ 开头.
 
 但是你可能会发现你无法切换到你的共享文件夹中, 原因是当前用户不在 vboxsf 这个组中. 使用下面的命令将当前用户加到 vboxsf 组中.
 
