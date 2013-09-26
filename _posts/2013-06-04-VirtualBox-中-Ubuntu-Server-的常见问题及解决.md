@@ -9,11 +9,11 @@ modified: 2013-07-28
 如果虚拟机中安装的是 XP 的话, 只要在菜单中选择安装增强包, 然后打开我的电脑, 双击光驱就可以弹出安装对话框了.
 但是在 Ubuntu Server 中则要稍微复杂些, 首先同样是在 Devices 中选择 Install Guest Additions, 与 XP 不同的是, 这里你需要手动挂载光驱.
 
-    sudo mount /dev/cdrom /cdrom
+    sudo mount /dev/cdrom /media/cdrom
 
 挂载成功之后进入 /cdrom 文件夹并执行 VBoxLinuxAdditions.run 脚本.
 
-    cd /cdrom
+    cd /media/cdrom
     sudo ./VBoxLinuxAdditions.run
 
 至此增强包安装完成. 之后你就可以进行共享文件夹的设置了, 设置完成后, 共享文件夹位于 /media 目录下, 以 sf_ 开头.
