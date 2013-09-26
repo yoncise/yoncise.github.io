@@ -32,7 +32,13 @@ modified: 2013-07-28
 
     sudo vim /etc/default/grub
 
-找到 GRUB_CMDLINE_LINUX_DEFAULT="", 在双引号中添加 consoleblank=0, 修改完成后是 GRUB_CMDLINE_LINUX_DEFAULT="consoleblank=0".
+找到
+
+    GRUB_CMDLINE_LINUX_DEFAULT=""
+
+在双引号中添加 consoleblank=0
+
+    GRUB_CMDLINE_LINUX_DEFAULT="consoleblank=0"
 
 最后更新下 grub 并重启
 
@@ -43,9 +49,9 @@ modified: 2013-07-28
 
 ## 添加 Host-only Adapter
 
-首先在 VirtualBox 主界面中打开 File - Preferences.
+首先在 VirtualBox 主界面中打开 Preferences.
 
-在 Network 界面中添加一个 host-only network. 这样当你选择 Host-only Adapter 时就不会报错了.
+在 Network 界面中添加一个 Host-only Network. 这样当你选择 Host-only Adapter 时就不会报错了.
 
 完成这些后, 你会发现主机还是无法访问 Ubuntu. ifconfig 显示的是 eth1 网络接口没有启动. 需要我们手动配置下.
 
