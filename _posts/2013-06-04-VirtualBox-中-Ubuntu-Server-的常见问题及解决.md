@@ -2,25 +2,33 @@
 layout: post
 title: VirtualBox 中 Ubuntu Server 的常见问题及解决
 category: Tech
-modified: 2013-07-28
+modified: 2013-09-27
 ---
 ## 安装 Guest Additions
 
 如果虚拟机中安装的是 XP 的话, 只要在菜单中选择安装增强包, 然后打开我的电脑, 双击光驱就可以弹出安装对话框了.
-但是在 Ubuntu Server 中则要稍微复杂些, 首先同样是在 Devices 中选择 Install Guest Additions, 与 XP 不同的是, 这里你需要手动挂载光驱.
+但是在 Ubuntu Server 中则要稍微复杂些. 
+
+首先, 安装 build-essential:
+
+    sudo apt-get install build-essential
+
+之后在 Devices 菜单中选择 Install Guest Additions, 与 XP 不同的是, 这里你需要手动挂载光驱:
 
     sudo mount /dev/cdrom /media/cdrom
 
-挂载成功之后进入 /media/cdrom 文件夹并执行 VBoxLinuxAdditions.run 脚本.
+挂载成功之后进入 /media/cdrom 文件夹并执行 VBoxLinuxAdditions.run 脚本:
 
     cd /media/cdrom
     sudo ./VBoxLinuxAdditions.run
 
-至此增强包安装完成. 重启之后你就可以进行共享文件夹的设置了, 设置完成后, 共享文件夹位于 /media 目录下, 以 sf_ 开头.
+至此增强包安装完成. 之后你就可以进行共享文件夹的设置了, 设置完成后重启, 共享文件夹将出现在 /media 目录下, 以 sf_ 开头.
 
-但是你可能会发现你无法切换到你的共享文件夹中, 原因是当前用户不在 vboxsf 这个组中. 使用下面的命令将当前用户加到 vboxsf 组中.
+但是你会发现你无法切换到你的共享文件夹中, 原因是当前用户不在 vboxsf 这个组中. 使用下面的命令将当前用户加到 vboxsf 组中.
 
     sudo usermod -G vboxsf -a ACCOUNT
+
+最后重启下就行了.
 
 > [VirtualBox Shared Folders with Ubuntu Server Guest](http://ipggi.wordpress.com/2010/03/11/virtualbox-shared-folders-with-ubuntu-server-guest/)
 > 
