@@ -11,5 +11,6 @@ comment: false
 > 1. Ask the right question
 > 2. Permission to be human
 > 3. Be the change you want to see in the world
+> 4. Congruence
 
 -- Positive Psychology
