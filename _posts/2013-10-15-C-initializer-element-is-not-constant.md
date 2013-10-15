@@ -1,6 +1,6 @@
 ---
 layout: post
-title: C initializer element is not constant
+title: C - initializer element is not constant
 category: tech
 ---
 写代码的时候, 写出了类似下面的一段代码:
