@@ -45,4 +45,4 @@ External 和 Static 的变量的取地址操作, 函数指针的赋值操作:
 那么, 为什么 External 和 Static 的变量的初始化值要能在编译期间就确定呢?
 
 因为编译完成后, External 和 Static 的变量是位于可执行文件的 data segment 中的, 
-这部分将和 code segment 一起载入到内存中, 所以他们的值是在运行前就要确定的.
+这部分将和 code segment 一起载入到内存中, 所以他们的初始化值是在运行前就要确定的.
