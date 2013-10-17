@@ -15,7 +15,7 @@ category: tech
 
     error: initializer element is not constant
 
-在 The C Programming Language 有这么一段话:
+在 The C Programming Language 中有这么一段话:
 
 > For external and static variables, the initializer must be a constant expression; the initialization is done once, conceptionally before the program begins execution.
 
