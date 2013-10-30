@@ -108,6 +108,7 @@ nav ul li ul {
 #home ul li {
     list-style: none;
     clear: both;
+    overflow: hidden;
 }
 
 #home ul li + li {
@@ -169,6 +170,7 @@ nav ul li ul {
 #category ul li {
     list-style: none;
     clear: both;
+    overflow: hidden;
 }
 
 #category .category_name {
