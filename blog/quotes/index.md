@@ -14,3 +14,7 @@ comment: false
 > 4. Congruence
 
 -- Positive Psychology
+
+> 1.  To see if a recursive function does what it's supposed to, all you have to ask is, does it cover all the cases?
+
+-- Ansi Common Lisp
