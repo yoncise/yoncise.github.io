@@ -33,7 +33,7 @@ category: Note
     因为 function 是一个 Special Operator 所以 name 不会被 evaluate.
     #' (sharp-quote) 是它的缩写, 就像 ' (quote) 是 quote 的缩写一样.
 
-3. **(apply function ftrest args)** _Function_
+3. **(apply function &rest args)** _Function_
 
     > Calls function on args, of which there must be at least one. The last org must
     > be a list. The arguments to the function consist of each org up to the last, plus
