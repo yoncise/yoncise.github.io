@@ -15,7 +15,8 @@ category: Note
     > 2. The values of the arguments are passed to the function named by the
     > operator. In this case, it is the + function, which returns 5.
 
-    对于一个表达式来说, 第一个元素必须是一个 Symbol (这个 Symbol 要么是一个 Function 要么是一个 Macro 要么是一个 Special Operator), 或者是 lambda 表达式.
+    对于一个表达式, 第一个元素必须是一个 Symbol 或者是一个 lambda 表达式.
+    其中, Symbol 要么是一个 Function 要么是一个 Macro 要么是一个 Special Operator.
     Lisp 不会 evaluate 一个表达式的第一个元素然后根据返回的值来进行函数调用.
 
     所以下面这段代码是非法的:
@@ -30,7 +31,7 @@ category: Note
     > implementation-dependent whether or not there is a function called (setf /) .
 
     因为 function 是一个 Special Operator 所以 name 不会被 evaluate.
-    #' (sharp-quote) 是它的缩写, 就像 ' (quote) 是 quote 的缩写.
+    #' (sharp-quote) 是它的缩写, 就像 ' (quote) 是 quote 的缩写一样.
 
 3. **(apply function ftrest args)** _Function_
 
