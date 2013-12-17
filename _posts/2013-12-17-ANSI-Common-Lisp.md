@@ -36,13 +36,15 @@ category: Note
 3. **(apply function &rest args)** _Function_
 
     > Calls function on args, of which there must be at least one. The last org must
-    > be a list. The arguments to the function consist of each org up to the last, plus
+    > be a list. The arguments to the function consist of each arg up to the last, plus
     > each element of the last; that is, the argument list is composed as if by list*.
     > **The function can also be a symbol**, in which case its global function definition
     > is used.
 
     apply 的第一个参数不一定是一个 function object,
-    也可以是一个 Symbol, 所以下面这两个表达式都是正确的:
+    也可以是一个 symbol, 所以下面这两个表达式都是正确的:
         
         (apply #'+ 2 3)
         (apply '+ 2 3)
+
+    funcall 也可以传一个 function object 或者是一个 symbol.
