@@ -35,7 +35,7 @@ category: Note
 
 3. **(apply function &rest args)** _Function_
 
-    > Calls function on args, of which there must be at least one. The last org must
+    > Calls function on args, of which there must be at least one. The last arg must
     > be a list. The arguments to the function consist of each arg up to the last, plus
     > each element of the last; that is, the argument list is composed as if by list*.
     > **The function can also be a symbol**, in which case its global function definition
