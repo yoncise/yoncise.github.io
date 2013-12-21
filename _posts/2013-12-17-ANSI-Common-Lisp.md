@@ -24,7 +24,7 @@ modified: 2013-12-21
         (setq lst '(+))
         ((car lst) 2 3)
 
-2. **function** _Special Operator_
+2. **function** _(Special Operator)_
 
         (function name)
 
@@ -35,7 +35,7 @@ modified: 2013-12-21
     因为 _function_ 是一个 Special Operator 所以 name 不会被 evaluate.
     #' (sharp-quote) 是它的缩写, 就像 ' (quote) 是 _quote_ 的缩写一样.
 
-3. **apply** _Function_
+3. **apply** _(Function)_
 
         (apply function &rest args)
 
@@ -56,8 +56,7 @@ modified: 2013-12-21
 4. **let** _Special Operator_
 
         (let ({symbol | {(symbol [value])}*)
-
-    **declaration* expression*)**
+             declaration* expression*)
 
     > Evaluates its body with each symbol bound to the value of the corresponding
     > value expression, or nil if no value is given.
@@ -65,11 +64,11 @@ modified: 2013-12-21
     _let_ 第一个参数是一个 list, 里面的元素可以是 symbol, 
     也可以是形如 _(symbol [value])_ 的 list.
 
-5. **case** _Macro_
+5. **case** _(Macro)_
 
         (case object (key expression*)*
+                     [({t | otherwise} expression*)])
 
-    **[({t | otherwise} expression*)])**
     > Evaluates object, then looks at the remaining clauses in order; if the object is
     > eql to or a member of the key (not evaluated) of some clause, or the clause
     > begins with t or otherwise, then evaluates the following expressions and
