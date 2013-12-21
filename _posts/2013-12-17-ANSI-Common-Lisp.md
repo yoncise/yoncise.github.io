@@ -2,6 +2,7 @@
 layout: post
 title: ANSI Common Lisp
 category: Note
+modified: 2013-12-21
 ---
 1. **evaluation rule**
 
@@ -23,7 +24,9 @@ category: Note
         (setq lst '(+))
         ((car lst) 2 3)
 
-2. **(function name)** _Special Operator_
+2. **function** _Special Operator_
+
+        (function name)
 
     > Returns the function whose name is name, which can be either **a symbol, a list
     > of the form (setf /) , or a lambda expression**. If / is a built-in operator, it is
@@ -32,7 +35,9 @@ category: Note
     因为 _function_ 是一个 Special Operator 所以 name 不会被 evaluate.
     #' (sharp-quote) 是它的缩写, 就像 ' (quote) 是 _quote_ 的缩写一样.
 
-3. **(apply function &rest args)** _Function_
+3. **apply** _Function_
+
+        (apply function &rest args)
 
     > Calls function on args, of which there must be at least one. The last arg must
     > be a list. The arguments to the function consist of each arg up to the last, plus
@@ -48,9 +53,11 @@ category: Note
 
     _funcall_ 也可以传一个 function object 或者是一个 symbol.
 
-4. **(let ({symbol | {(symbol [value])}*)** _Special Operator_
+4. **let** _Special Operator_
 
-    **     declaration* expression*)**
+        (let ({symbol | {(symbol [value])}*)
+
+    **declaration* expression*)**
 
     > Evaluates its body with each symbol bound to the value of the corresponding
     > value expression, or nil if no value is given.
@@ -58,9 +65,11 @@ category: Note
     _let_ 第一个参数是一个 list, 里面的元素可以是 symbol, 
     也可以是形如 _(symbol [value])_ 的 list.
 
-5. **(case object (key expression*)\*** _Macro_
+5. **case** _Macro_
 
-    **             [({t | otherwise} expression*)])**
+        (case object (key expression*)*
+
+    **[({t | otherwise} expression*)])**
     > Evaluates object, then looks at the remaining clauses in order; if the object is
     > eql to or a member of the key (not evaluated) of some clause, or the clause
     > begins with t or otherwise, then evaluates the following expressions and
