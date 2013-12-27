@@ -29,8 +29,8 @@ modified: 2013-12-21
         (function name)
 
     > Returns the function whose name is name, which can be either **a symbol, a list
-    > of the form (setf /) , or a lambda expression**. If / is a built-in operator, it is
-    > implementation-dependent whether or not there is a function called (setf /) .
+    > of the form (setf f) , or a lambda expression**. If f is a built-in operator, it is
+    > implementation-dependent whether or not there is a function called (setf f) .
 
     因为 _function_ 是一个 Special Operator 所以 name 不会被 evaluate.
     #' (sharp-quote) 是它的缩写, 就像 ' (quote) 是 _quote_ 的缩写一样.
