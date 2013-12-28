@@ -6,7 +6,7 @@ modified: 2013-12-21
 ---
 1. **evaluation rule**
 
-    > In Lisp, + is a function, and an expression like (+ 2 3) is a function call.
+    > In Lisp, + is a function, and an expression like _(+ 2 3)_ is a function call.
     > When Lisp evaluates a function call, it does so in two steps:
     > 
     > 1. First the arguments are evaluated, from left to right. In this case, each
@@ -28,21 +28,21 @@ modified: 2013-12-21
 
         (function name)
 
-    > Returns the function whose name is name, which can be either **a symbol, a list
-    > of the form (setf f) , or a lambda expression**. If f is a built-in operator, it is
-    > implementation-dependent whether or not there is a function called (setf f) .
+    > Returns the function whose name is _name_, which can be either **a symbol, a list
+    > of the form _(setf f)_ , or a lambda expression**. If _f_ is a built-in operator, it is
+    > implementation-dependent whether or not there is a function called _(setf f)_ .
 
-    因为 _function_ 是一个 Special Operator 所以 name 不会被 evaluate.
+    因为 _function_ 是一个 Special Operator 所以 _name_ 不会被 evaluate.
     #' (sharp-quote) 是它的缩写, 就像 ' (quote) 是 _quote_ 的缩写一样.
 
 3. **apply** _(Function)_
 
         (apply function &rest args)
 
-    > Calls function on args, of which there must be at least one. The last arg must
-    > be a list. The arguments to the function consist of each arg up to the last, plus
-    > each element of the last; that is, the argument list is composed as if by list*.
-    > **The function can also be a symbol**, in which case its global function definition
+    > Calls _function_ on _args_, of which there must be at least one. The last arg must
+    > be a list. The arguments to the function consist of each _arg_ up to the last, plus
+    > each element of the last; that is, the argument list is composed as if by _list*_.
+    > **The _function_ can also be a symbol**, in which case its global function definition
     > is used.
 
     _apply_ 的第一个参数不一定是一个 function object,
@@ -58,8 +58,8 @@ modified: 2013-12-21
         (let ({symbol | {(symbol [value])}*)
              declaration* expression*)
 
-    > Evaluates its body with each symbol bound to the value of the corresponding
-    > value expression, or nil if no value is given.
+    > Evaluates its body with each _symbol_ bound to the value of the corresponding
+    > _value_ expression, or _nil_ if no _value_ is given.
 
     _let_ 第一个参数是一个 list, 里面的元素可以是 symbol, 
     也可以是形如 _(symbol [value])_ 的 list.
@@ -69,20 +69,20 @@ modified: 2013-12-21
         (case object (key expression*)*
                      [({t | otherwise} expression*)])
 
-    > Evaluates object, then looks at the remaining clauses in order; if the object is
-    > eql to or a member of the key (not evaluated) of some clause, or the clause
-    > begins with t or otherwise, then evaluates the following expressions and
-    > returns the value(s) of the last. Returns nil if no key matches, or the matching
-    > key has no expressions. The symbols t and otherwise may not appear as
-    > keys, but you can get the same effect by using (t) and (otherwise).
+    > Evaluates _object_, then looks at the remaining clauses in order; if the _object_ is
+    > eql to or a member of the _key_ (not evaluated) of some clause, or the clause
+    > begins with _t_ or _otherwise_, then evaluates the following _expressions_ and
+    > returns the value(s) of the last. Returns _nil_ if no _key_ matches, or the matching
+    > _key_ has no _expression_s. The symbols _t_ and _otherwise_ may not appear as
+    > _key_s, but you can get the same effect by using _(t)_ and _(otherwise)_.
 
-    如果 key 是 _nil_, 那么这个 clause 里的 expressions 永远都不会被执行,
-    即使你的 object 的值是 _nil_. 类似于 _(t)_ 和 _(otherwise)_,
+    如果 _key_ 是 _nil_, 那么这个 clause 里的 _expression_s 永远都不会被执行,
+    即使你的 _object_ 的值是 _nil_. 类似于 _(t)_ 和 _(otherwise)_,
     我们可以用 _(nil)_ 来消除二义性.
 
-    这里的二义是指, 如果 key 是 _nil_, _t_ 和 _otherwise_ 
+    这里的二义是指, 如果 _key_ 是 _nil_, _t_ 和 _otherwise_ 
     中的一个的时候, 那么究竟是表示它的特殊含义,
-    还是表示 object 的值等于它的时候就执行后面的 expressions 呢?
+    还是表示 _object_ 的值等于它的时候就执行后面的 _expression_s 呢?
 
     下面这个例子可以很好的说明问题:
 

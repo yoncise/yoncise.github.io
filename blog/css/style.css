@@ -236,7 +236,6 @@ article p {
 }
 
 article blockquote {
-    font-style: italic;
     margin-left: 0;
     padding-left: 24px;
     border-left: 4px solid #ddd;
