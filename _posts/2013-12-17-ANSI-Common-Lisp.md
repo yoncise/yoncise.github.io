@@ -6,7 +6,7 @@ modified: 2013-12-21
 ---
 1. **evaluation rule**
 
-    > In Lisp, + is a function, and an expression like _(+ 2 3)_ is a function call.
+    > In Lisp, _+_ is a function, and an expression like _(+ 2 3)_ is a function call.
     > When Lisp evaluates a function call, it does so in two steps:
     > 
     > 1. First the arguments are evaluated, from left to right. In this case, each
@@ -14,7 +14,7 @@ modified: 2013-12-21
     > 3, respectively.
     > 
     > 2. The values of the arguments are passed to the function named by the
-    > operator. In this case, it is the + function, which returns 5.
+    > operator. In this case, it is the _+_ function, which returns 5.
 
     Lisp 不会 evaluate 一个 list 的第一个元素 (operator),
     然后根据返回的值来进行函数调用.
@@ -33,7 +33,7 @@ modified: 2013-12-21
     > implementation-dependent whether or not there is a function called _(setf f)_ .
 
     因为 _function_ 是一个 Special Operator 所以 _name_ 不会被 evaluate.
-    #' (sharp-quote) 是它的缩写, 就像 ' (quote) 是 _quote_ 的缩写一样.
+    _#'_ (sharp-quote) 是它的缩写, 就像 _'_ (quote) 是 _quote_ 的缩写一样.
 
 3. **apply** _(Function)_
 
