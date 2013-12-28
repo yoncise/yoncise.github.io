@@ -74,7 +74,7 @@ modified: 2013-12-21
     > begins with _t_ or _otherwise_, then evaluates the following _expressions_ and
     > returns the value(s) of the last. Returns _nil_ if no _key_ matches, or the matching
     > _key_ has no _expressions_. The symbols _t_ and _otherwise_ may not appear as
-    > _key_s, but you can get the same effect by using _(t)_ and _(otherwise)_.
+    > _keys_, but you can get the same effect by using _(t)_ and _(otherwise)_.
 
     如果 _key_ 是 _nil_, 那么这个 clause 里的 _expressions_ 永远都不会被执行,
     即使你的 _object_ 的值是 _nil_. 类似于 _(t)_ 和 _(otherwise)_,
