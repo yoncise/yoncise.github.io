@@ -76,13 +76,13 @@ modified: 2013-12-21
     > _key_ has no _expression_s. The symbols _t_ and _otherwise_ may not appear as
     > _key_s, but you can get the same effect by using _(t)_ and _(otherwise)_.
 
-    如果 _key_ 是 _nil_, 那么这个 clause 里的 _expression_s 永远都不会被执行,
+    如果 _key_ 是 _nil_, 那么这个 clause 里的 _expressions_ 永远都不会被执行,
     即使你的 _object_ 的值是 _nil_. 类似于 _(t)_ 和 _(otherwise)_,
     我们可以用 _(nil)_ 来消除二义性.
 
     这里的二义是指, 如果 _key_ 是 _nil_, _t_ 和 _otherwise_ 
     中的一个的时候, 那么究竟是表示它的特殊含义,
-    还是表示 _object_ 的值等于它的时候就执行后面的 _expression_s 呢?
+    还是表示 _object_ 的值等于它的时候就执行后面的 _expressions_ 呢?
 
     下面这个例子可以很好的说明问题:
 
