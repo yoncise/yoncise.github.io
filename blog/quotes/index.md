@@ -19,3 +19,7 @@ comment: false
 > 2. Three points can be made about optimization, regardless of the implementation: it should be focused on bottlenecks, it should not begin too early, and it should begin with algorithms.
 
 -- Ansi Common Lisp
+
+> Patterns in code often signal the need for new abstractions.
+
+-- On Lisp
