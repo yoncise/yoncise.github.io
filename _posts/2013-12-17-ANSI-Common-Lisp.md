@@ -2,9 +2,9 @@
 layout: post
 title: ANSI Common Lisp
 category: Note
-modified: 2013-12-21
+modified: 2013-12-30
 ---
-1. **evaluation rule**
+1. **Evaluation rule**
 
     > In Lisp, _+_ is a function, and an expression like _(+ 2 3)_ is a function call.
     > When Lisp evaluates a function call, it does so in two steps:
@@ -95,3 +95,21 @@ modified: 2013-12-21
             (t t))
 
     第一个表达式的值是 _t_, 而第二个表达式的值是 _nil_.
+
+6. **Vertical bar**
+
+    > There is a special syntax for referring to symbols whose names contain
+    > whitespace or other things that might otherwise be significant to the reader.
+    > Any sequence of characters between vertical bars is treated as a symbol.
+
+        > (list '|Lisp 1.5| '|| '|abc| '|ABC|)
+        (|Lisp 1.5| || |abc| ABC)
+
+    > Remember that the vertical bars are a special syntax for denoting symbols.
+    > They are not part of the symbol's name:
+
+        > (symbol-name '|a b c|)
+        "a b c"
+
+    > (If you want to use a vertical bar in the name of a symbol,
+    > you can do it by putting a backslash before the bar.)
