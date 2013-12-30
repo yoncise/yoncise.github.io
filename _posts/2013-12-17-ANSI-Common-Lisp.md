@@ -53,7 +53,7 @@ modified: 2013-12-30
 
     _funcall_ 也可以传一个 function object 或者是一个 symbol.
 
-4. **let** _Special Operator_
+4. **let** _(Special Operator)_
 
         (let ({symbol | {(symbol [value])}*)
              declaration* expression*)
