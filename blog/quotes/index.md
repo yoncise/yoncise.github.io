@@ -18,7 +18,7 @@ comment: false
 > 1. To see if a recursive function does what it's supposed to, all you have to ask is, does it cover all the cases?
 > 2. Three points can be made about optimization, regardless of the implementation: it should be focused on bottlenecks, it should not begin too early, and it should begin with algorithms.
 
--- Ansi Common Lisp
+-- ANSI Common Lisp
 
 > Patterns in code often signal the need for new abstractions.
 
