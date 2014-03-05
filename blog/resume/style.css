@@ -21,7 +21,6 @@ p {
 .left {
     position: absolute;
     width: 280px;
-    top: 0;
     left: 24px;
     padding: 16px 20px;
 }
@@ -29,7 +28,6 @@ p {
 .right {
     position: absolute;
     width: 280px;
-    top: 0;
     right: 24px;
     padding: 16px 20px;
 }
@@ -100,21 +98,21 @@ p {
 
 /*------------------------------------------------------------*/ 
 
-#name .left {
+#name .left-bottom {
     background: #9ac5de;
     border-top-right-radius: 8px;
     border-bottom-left-radius: 8px;
     left: 248px;
-    top: -3px;
     width: 60px;
     padding: 12px 20px;
+    bottom: 3px;
 }
 
-#name .left .one {
+#name .left-bottom .one {
     font-size: 32px;
 }
 
-#name .left:after {
+#name .left-bottom:after {
     border-bottom-color: #9ac5de;
     right: -12px;
 }
@@ -137,33 +135,33 @@ p {
     line-height: 80px;
 }
 
-#avatar .right {
+#avatar .right-bottom {
     background: #90b2ca;
     right: 196px;
-    top: -55px;
+    bottom: 3px;
     width: 100px;
     height: 100px;
 }
 
-#avatar .right:after {
+#avatar .right-bottom:after {
     border-bottom-color: #90b2ca;
 }
 
-#introduction .left {
+#introduction .left-top {
     background: #809aae;
     top: 6px;
 }
 
-#introduction .left .one {
+#introduction .left-top .one {
     font-size: 12px;
     margin-bottom: 6px;
 }
 
-#introduction .left .two {
+#introduction .left-top .two {
     font-size: 12px;
 }
 
-#introduction .left:before {
+#introduction .left-top:before {
     border-top-color: #809aae;
 }
 
@@ -190,40 +188,40 @@ p {
     line-height: 60px;
 }
 
-#education .right {
+#education .right-bottom {
     background: #687989;
-    top: -22px;
+    bottom: 4px;
 }
 
-#education .right .two {
+#education .right-bottom .two {
     margin-right: 24px;
     font-size: 12px;
 }
 
-#education .right .three {
+#education .right-bottom .three {
     font-size: 12px;
 }
 
-#education .right:after {
+#education .right-bottom:after {
     border-bottom-color: #687989;
 }
 
-#personality .left {
+#personality .left-top {
     background: #877f8f;
     top: 6px;
 }
 
-#personality .left p + p {
+#personality .left-top p + p {
     margin-top: 12px;
 }
 
-#personality .left .subtitle {
+#personality .left-top .subtitle {
     display: inline-block;
     font-size: 14px;
     width: 142px;
 }
 
-#personality .left:before {
+#personality .left-top:before {
     border-top-color: #877f8f;
 }
 
@@ -255,45 +253,45 @@ p {
     line-height: 90px;
 }
 
-#skill .right {
+#skill .right-bottom {
     background: #b58ea6;
-    top: -80px;
+    bottom: 0;
 }
 
-#skill .right p + p {
+#skill .right-bottom p + p {
     margin-top: 12px;
 }
 
-#skill .right .subtitle {
+#skill .right-bottom .subtitle {
     display: inline-block;
     font-size: 14px;
     width: 142px;
 }
 
-#skill .right:after {
+#skill .right-bottom:after {
     border-bottom-color: #b58ea6;
 }
 
-#contact .left {
+#contact .left-bottom {
     background: #da9bb6;
-    top: 85px;
+    bottom: 5px;
 }
 
-#contact .left p + p {
+#contact .left-bottom p + p {
     margin-top: 12px;
 }
 
-#contact .left .subtitle {
+#contact .left-bottom .subtitle {
     display: inline-block;
     font-size: 14px;
     width: 100px;
 }
 
-#contact .left .content {
+#contact .left-bottom .content {
     font-size: 14px;
 }
 
-#contact .left:after {
+#contact .left-bottom:after {
     border-bottom-color: #da9bb6;
 }
 
