@@ -23,3 +23,7 @@ comment: false
 > Patterns in code often signal the need for new abstractions.
 
 -- On Lisp
+
+> 领导这个角色不是别人赋予的, 是你自己扮演的.
+
+-- Self
