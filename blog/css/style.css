@@ -230,6 +230,11 @@ article time {
     text-align: center;
 }
 
+article .post_ad {
+    margin-top: 12px;
+    text-align: center;
+}
+
 article p {
     line-height: 24px;
     margin: 12px 0;

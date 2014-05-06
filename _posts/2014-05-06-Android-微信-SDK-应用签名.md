@@ -10,7 +10,7 @@ category: Tech
 
 Android 要求所有安装的应用都是被签名过的, 
 但是我们开发的时候好像没有对应用进行签名呀!
-这是因为在 debug 模式下, 编译的过程中会自动帮我们 对 APK 进行签名.
+这是因为在 debug 模式下, 编译的过程中会自动对 APK 进行签名.
 签名需要用到 keystore 文件, 可以通过 JDK 自带的 keytool 工具生成.
 Android SDK 会默认帮我们创建一个 keystore 文件, 文件名是 debug.keystore.
 
@@ -48,7 +48,7 @@ MD5 fingerprint 的值就是了, 记得把冒号去掉.
 这个是默认的 debug.keystore 的 MD5 fingerprint, 
 如果你要获取你自己的 keystore 的 MD5 fingerprint 需要通过下面一种方法.
 
-3. 根据微信官方提供的 [Signature的生成方法](http://dev.wechat.com/download/signature/signature_method.doc) 文档, 我们可以使用下面的命令:
+3. 根据微信官方提供的 [Signature的生成方法](http://dev.wechat.com/download/signature/signature_method.doc) 文档, 我们可以使用下面的命令来获取应用签名:
 
         keytool -exportcert -keystore debug.keystore  -storepass android -alias androiddebugkey | md5sum
 
