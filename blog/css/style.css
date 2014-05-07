@@ -216,6 +216,7 @@ nav ul li ul {
 
 article {
     padding: 0;
+    line-height: 1.6em;
 }
 
 article .title {
@@ -236,7 +237,6 @@ article .banner {
 }
 
 article p {
-    line-height: 1.6em;
     margin: 12px 0;
 }
 
