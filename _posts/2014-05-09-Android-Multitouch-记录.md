@@ -59,11 +59,11 @@ category: Tech
 
 > getX()
 >
-> getX(int) for the first pointer index (may be an arbitrary pointer identifier).
+> *getX(int) for the first pointer index (may be an arbitrary pointer identifier).*
 >
 > getY()
 >
-> getY(int) for the first pointer index (may be an arbitrary pointer identifier).
+> *getY(int) for the first pointer index (may be an arbitrary pointer identifier).*
 
 直接调用 getX(), getY() 得到的竟然不是触发该事件的 Pointer 的坐标,
 还非要获取 Index 之后再去调用 getX(int pointerIndex) 和 getY(int pointerIndex)
