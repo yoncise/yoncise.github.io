@@ -231,6 +231,11 @@ article time {
     text-align: center;
 }
 
+article .banner {
+    margin-top: 12px;
+    text-align: center;
+}
+
 article p {
     margin: 12px 0;
 }
