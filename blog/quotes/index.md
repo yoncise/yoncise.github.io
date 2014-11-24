@@ -24,4 +24,4 @@ comment: false
 
 -- On Lisp
 
-> 1. Get Things Done (GTD).
+> 1. Getting Things Done (GTD).
