@@ -2,11 +2,11 @@
     <nav>
         <ul>
             <li>
-            <a {% if page.current == 'home' %} class="current" {% endif %} href="/blog/">Home</a>
+                <a {% if page.current == 'home' %} class="current" {% endif %} href="/blog/">Home</a>
             </li>
 
             <li class="menu">
-            <a {% if page.current == 'category' %} class="current" {% endif %} href="/blog/category/">Category</a>
+                <a {% if page.current == 'category' %} class="current" {% endif %} href="/blog/category/">Category</a>
             <ul>
                 {% for category in site.categories %}
                 <li><a href="/blog/category/#{{ category[0] }}">{{ category[0] }}</a></li>
@@ -15,15 +15,17 @@
             </li>
 
             <li>
-            <a {% if page.current == 'link' %} class="current" {% endif %} href="/blog/link/">Link</a>
+                <a {% if page.current == 'link' %} class="current" {% endif %} href="/blog/link/">Link</a>
             </li>
 
             <li>
-            <a {% if page.current == 'quotes' %} class="current" {% endif %} href="/blog/quotes/">Quotes</a>
+                <a {% if page.current == 'quotes' %} class="current" {% endif %} href="/blog/quotes/">Quotes</a>
             </li>
+        <!--
             <li>
-            <a target="_blank" href="/blog/resume/">Resume</a>
+                <a target="_blank" href="/blog/resume/">Resume</a>
             </li>
+        -->
         </ul>
     </nav>
 </header>
