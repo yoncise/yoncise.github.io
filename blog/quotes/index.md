@@ -24,6 +24,4 @@ comment: false
 
 -- On Lisp
 
-> 领导这个角色不是别人赋予的, 是你自己扮演的.
-
--- Self
+> 1. Get Things Done (GTD).
