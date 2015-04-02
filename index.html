@@ -1,11 +1,38 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>Redirecting - Yoncise</title>
-        <meta property="qc:admins" content="2523313606617631356375" />
-     </head>
-     <body onload="javascript:setTimeout(function () {window.location.href='/blog/'}, 3000)">
-         <h2 style="text-align: center; font-family: Georgia;">Redirecting to my <a href="/blog/">blog</a>...</h2>
-     </body>
- </html>
+---
+layout: default
+current: home
+---
+<div id="home">
+
+    {% include cse.html %}
+
+    <ul>
+        {% for post in paginator.posts %}
+        <li>
+        <a href="{{ post.url }}">{{ post.title }}</a>
+        <time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date_to_string }}</time>
+        </li>
+        {% endfor %}
+    </ul>
+
+    <div id="pagination">
+        {% if paginator.previous_page %}
+        {% if paginator.previous_page == 1 %}
+        <a class="previous" href="/blog/">Prev</a>
+        {% else %}
+        <a class="previous" href="{{ paginator.previous_page_path }}">Prev</a>
+        {% endif %}
+        {% else %}
+        <span class="prev">Prev</span>
+        {% endif %}
+
+        <span class="page_number ">{{ paginator.page }} of {{ paginator.total_pages }}</span>
+
+        {% if paginator.next_page %}
+        <a class="next" href="{{ paginator.next_page_path }}">Next</a>
+        {% else %}
+        <span class="next ">Next</span>
+        {% endif %}
+    </div>
+
+</div>
