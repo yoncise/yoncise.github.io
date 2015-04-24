@@ -1,0 +1,310 @@
+body {
+    margin: 24px auto;
+    width: 960px;
+    font-family: Verdana;
+    background: url(bg.jpg);
+}
+
+p {
+    margin: 0;
+}
+
+.item {
+    position: relative;
+}
+
+.center {
+    text-align: center;
+    font-family: "Pathway Gothic One";
+}
+
+.left {
+    position: absolute;
+    width: 280px;
+    left: 24px;
+    padding: 16px 20px;
+}
+
+.right {
+    position: absolute;
+    width: 280px;
+    right: 24px;
+    padding: 16px 20px;
+}
+
+.left p, .right p {
+    color: #fff;
+}
+
+.left-bottom {
+    border-top-right-radius: 16px;
+    border-bottom-left-radius: 16px;
+}
+
+.left-bottom:after {
+    content: "";
+    width: 0;
+    border-width: 0 24px 24px 0;
+    border-style: solid;
+    border-color: transparent;
+    position: absolute;
+    right: -16px;
+    bottom: 0;
+}
+
+.right-bottom {
+    border-top-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+}
+
+.right-bottom:after {
+    content: "";
+    width: 0;
+    border-width: 0 0 24px 24px;
+    border-style: solid;
+    border-color: transparent;
+    position: absolute;
+    left: -16px;
+    bottom: 0;
+}
+
+.left-top {
+    border-top-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+}
+
+.left-top:before {
+    content: "";
+    width: 0;
+    border-width: 24px 24px 0 0;
+    border-style: solid;
+    border-color: transparent;
+    position: absolute;
+    right: -16px;
+    top: 0;
+}
+
+.three-star:after {
+    content: "\2605\2605\2605\2606\2606";
+}
+
+.four-star:after {
+    content: "\2605\2605\2605\2605\2606";
+}
+
+.five-star:after {
+    content: "\2605\2605\2605\2605\2605";
+}
+
+/*------------------------------------------------------------*/ 
+
+#name .left-bottom {
+    background: #9ac5de;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    left: 248px;
+    width: 60px;
+    padding: 12px 20px;
+    bottom: 3px;
+}
+
+#name .left-bottom .one {
+    font-size: 32px;
+}
+
+#name .left-bottom:after {
+    border-bottom-color: #9ac5de;
+    right: -12px;
+}
+
+#name .center {
+    color: #9ac5de;
+}
+
+#name .center .one {
+    font-size: 100px;
+    line-height: 80px;
+}
+
+#avatar .center {
+    color: #90b2ca;
+}
+
+#avatar .center .one {
+    font-size: 100px;
+    line-height: 80px;
+}
+
+#avatar .right-bottom {
+    background: #90b2ca;
+    right: 196px;
+    bottom: 3px;
+    width: 100px;
+    height: 100px;
+}
+
+#avatar .right-bottom:after {
+    border-bottom-color: #90b2ca;
+}
+
+#introduction .left-top {
+    background: #809aae;
+    top: 6px;
+}
+
+#introduction .left-top .one {
+    font-size: 12px;
+    margin-bottom: 6px;
+}
+
+#introduction .left-top .two {
+    font-size: 12px;
+}
+
+#introduction .left-top:before {
+    border-top-color: #809aae;
+}
+
+#introduction .center {
+    color: #809aae;
+}
+
+#introduction .center .one {
+    font-size: 75px;
+    line-height: 60px;
+}
+
+#introduction .center .two {
+    font-size: 52px;
+    line-height: 40px;
+}
+
+#education .center {
+    color: #687989;
+}
+
+#education .center .one {
+    font-size: 70px;
+    line-height: 60px;
+}
+
+#education .right-bottom {
+    background: #687989;
+    bottom: 4px;
+}
+
+#education .right-bottom .two {
+    margin-right: 24px;
+    font-size: 12px;
+}
+
+#education .right-bottom .three {
+    font-size: 12px;
+}
+
+#education .right-bottom:after {
+    border-bottom-color: #687989;
+}
+
+#personality .left-top {
+    background: #877f8f;
+    top: 6px;
+}
+
+#personality .left-top p + p {
+    margin-top: 12px;
+}
+
+#personality .left-top .subtitle {
+    display: inline-block;
+    font-size: 14px;
+    width: 142px;
+}
+
+#personality .left-top:before {
+    border-top-color: #877f8f;
+}
+
+#personality .center {
+    color: #877f8f;
+}
+
+#personality .center .one {
+    font-size: 75px;
+    line-height: 60px;
+}
+
+#personality .center .two {
+    font-size: 116px;
+    line-height: 90px;
+}
+
+#skill .center {
+    color: #b58ea6;
+}
+
+#skill .center .one {
+    font-size: 70px;
+    line-height: 60px;
+}
+
+#skill .center .two {
+    font-size: 116px;
+    line-height: 90px;
+}
+
+#skill .right-bottom {
+    background: #b58ea6;
+    bottom: 0;
+}
+
+#skill .right-bottom p + p {
+    margin-top: 12px;
+}
+
+#skill .right-bottom .subtitle {
+    display: inline-block;
+    font-size: 14px;
+    width: 142px;
+}
+
+#skill .right-bottom:after {
+    border-bottom-color: #b58ea6;
+}
+
+#contact .left-bottom {
+    background: #da9bb6;
+    bottom: 5px;
+}
+
+#contact .left-bottom p + p {
+    margin-top: 12px;
+}
+
+#contact .left-bottom .subtitle {
+    display: inline-block;
+    font-size: 14px;
+    width: 100px;
+}
+
+#contact .left-bottom .content {
+    font-size: 14px;
+}
+
+#contact .left-bottom:after {
+    border-bottom-color: #da9bb6;
+}
+
+#contact .center {
+    color: #da9bb6;
+}
+
+#contact .center .one {
+    font-size: 124px;
+    line-height: 100px;
+}
+
+#contact .center .two {
+    font-size: 120px;
+    line-height: 100px;
+}
