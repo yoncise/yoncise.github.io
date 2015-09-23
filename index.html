@@ -1,36 +1,149 @@
----
-layout: default
-current: home
----
-<div id="home">
-
-    <ul>
-        {% for post in paginator.posts %}
-        <li>
-        <a href="{{ post.url }}">{{ post.title }}</a>
-        <time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date_to_string }}</time>
-        </li>
-        {% endfor %}
-    </ul>
-
-    <div id="pagination">
-        {% if paginator.previous_page %}
-        {% if paginator.previous_page == 1 %}
-        <a class="previous" href="/blog/">Prev</a>
-        {% else %}
-        <a class="previous" href="{{ paginator.previous_page_path }}">Prev</a>
-        {% endif %}
-        {% else %}
-        <span class="prev">Prev</span>
-        {% endif %}
-
-        <span class="page_number ">{{ paginator.page }} of {{ paginator.total_pages }}</span>
-
-        {% if paginator.next_page %}
-        <a class="next" href="{{ paginator.next_page_path }}">Next</a>
-        {% else %}
-        <span class="next ">Next</span>
-        {% endif %}
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>悦乎 - 发现身边的新鲜事</title>
+    <link href="http://cdn.bootcss.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://7xlmul.com1.z0.glb.clouddn.com/style.css" data-bundle="websites">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="http://7xlmul.com1.z0.glb.clouddn.com/icon.png" rel="shortcut icon" type="image/x-icon">
+    <meta name="description" content="产品特点
+      · 超本地化：每所学校都是一个独立的社区。
+      · 去身份：无头像、无昵称。
+      1. 趣事：包罗万象，无趣不有。
+      2. 吐槽：良性吐槽，杜绝喷、黑、抱怨发泄。
+      3. 爆料：有料可劲爆，没料可劲闹！
+      身边的头条由你决定！">
+    <meta name="keywords" content="新鲜事, 附近, 校园">
+    <meta name="author" content="Yuan Yon">
+    <!-- Apple Smart App Banner -->
+    <meta name="apple-itunes-app" content="app-id=1037706507">
+    <style type="text/css">
+      #public-landing-page .container {
+      font-family: 'Open Sans', sans-serif !important;
+      }
+      #public-landing-page.template-1 .hero,
+      #public-landing-page.template-2 .hero,
+      #public-landing-page.template-3 .hero,
+      #public-landing-page.template-4 .hero,
+      #public-landing-page.template-7 .hero,
+      #public-landing-page.template-8 .hero .graphic,
+      #public-landing-page.template-9 .bg-color,
+      #public-landing-page .store-badge-white-text,
+      #public-landing-page.template-1color .hero,
+      #public-landing-page.template-2color .hero {
+      background: #00D1C1;
+      }
+      #public-landing-page.template-5 .hero h2,
+      #public-landing-page.template-6 .hero h1,
+      #public-landing-page.template-8 .hero,
+      #public-landing-page.template-9 .hero h2,
+      #public-landing-page .hero .btn,
+      #public-landing-page .navbar .btn,
+      #public-landing-page .navbar.invert-navbar a,
+      #public-landing-page footer a,
+      #public-landing-page .benefit-header {
+      color: #00D1C1;
+      }
+      #public-landing-page .btn.btn-primary.btn-primary-invert,
+      #public-landing-page .navbar.invert-navbar .btn.btn-primary,
+      #public-landing-page .navbar .navbar-collapse.in .btn.btn-primary,
+      #public-landing-page .navbar .navbar-toggle .icon-bar,
+      #public-landing-page .download-text {
+      color: white;
+      background-color: #00D1C1;
+      }
+      #public-landing-page.template-1 .hero,
+      #public-landing-page.template-2 .hero,
+      #public-landing-page.template-4 .hero {
+      overflow: hidden;
+      }
+      #public-landing-page .hero .blurred-cover {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      z-index: 1px;
+      background-image: url('http://7xlmul.com1.z0.glb.clouddn.com/background.jpg');
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      -webkit-filter: blur(50px);
+      -moz-filter: blur(50px);
+      -o-filter: blur(50px);
+      -ms-filter: blur(50px);
+      filter: blur(50px);
+      margin: -60% -40% -40%;
+      }
+      #public-landing-page .hero .blurred-cover .darken {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      z-index: 2px;
+      background: rgba(0,0,0,.3);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="skit-controller">
+      <div id="public-landing-page" class="template-4 full-screen centered">
+        <section class="hero">
+          <div class="blurred-cover">
+            <div class="darken"></div>
+          </div>
+          <div class="container">
+            <nav class="navbar navbar-default">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand visible-xs" href="#">
+                  <img alt="悦乎" src="http://7xlmul.com1.z0.glb.clouddn.com/icon.png" class="app-icon">
+                  </a>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                  <ul class="nav navbar-nav navbar-right">
+                    <li><a href="http://wj.qq.com/survey.html?type=survey&amp;id=131874&amp;hash=0320" target="_blank">意见反馈</a></li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+            <div class="row">
+              <div class="col-xs-12">
+                <img src="http://7xlmul.com1.z0.glb.clouddn.com/icon.png" class="app-icon img-rounded">
+                <h1>悦乎</h1>
+                <h2>发现身边的新鲜事</h2>
+                <a href="https://itunes.apple.com/cn/app/id1037706507" class="app-store-badge" target="_blank">
+                <img src="http://7xlmul.com1.z0.glb.clouddn.com/app-store-badge.png">
+                </a>
+                <a href="http://a.app.qq.com/o/simple.jsp?pkgname=im.yon.android" class="google-play-badge" target="_blank">
+                <img src="http://7xlmul.com1.z0.glb.clouddn.com/google-play-badge.png">
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <footer>
+          <div class="container">
+            <div class="footer-nav col-xs-12 col-sm-8">
+              <a href="http://wj.qq.com/survey.html?type=survey&amp;id=131874&amp;hash=0320" target="_blank">意见反馈</a>
+              <a href="http://7xlmul.com1.z0.glb.clouddn.com/legal.html" target="_blank">使用条款</a>
+            </div>
+            <div class="launchkit-promo col-xs-12 col-sm-4">
+              <a href="mailto:contact@yon.im">© 2015 南京悦动互联网络科技有限公司</a>
+            </div>
+          </div>
+        </footer>
+      </div>
+      <script src="http://cdn.bootcss.com/jquery/1.10.2/jquery.js"></script>
+      <script src="http://cdn.bootcss.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
     </div>
-
-</div>
+  </body>
+</html>
