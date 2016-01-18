@@ -1,7 +1,6 @@
 ---
 layout: post
 title: select with blocking and non-blocking socket
-category: Tech
 ---
 select 作用在 blocking 和 non-blocking socket 上的效果是一样.
 blocking 和 non-blocking socket 的区别主要体现在 recv, send, accept, 

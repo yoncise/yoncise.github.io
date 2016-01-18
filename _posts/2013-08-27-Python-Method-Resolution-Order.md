@@ -1,8 +1,6 @@
 ---
 layout: post
 title: Python Method Resoluton Order
-category: Tech
-modified: 2013-08-28
 ---
 面向对象语言中, 为了找到一个方法的定义, 搜索继承图的顺序叫做 MRO (Method Resolution Order), 
 对于只支持单继承的语言, MRO 没什么好说的. 但对于支持多继承的语言, 比如 Python, MRO 就有搞头了.

@@ -1,7 +1,6 @@
 ---
 layout: post
 title: UDP Fragmentation
-category: Tech
 ---
 我们知道, UDP 是不可靠的, 
 比如你无法知道数据包是否发送成功, 你也无法知道数据包到达的先后顺序.

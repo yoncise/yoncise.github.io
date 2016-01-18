@@ -1,8 +1,6 @@
 ---
 layout: post
 title: ANSI Common Lisp
-category: Note
-modified: 2013-12-30
 ---
 1. **Evaluation rule**
 

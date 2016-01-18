@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Android - 微信 SDK 应用签名
-category: Tech
 ---
 在微信开放平台里创建移动应用的时候, 最重要的就是填写应用签名了. 
 

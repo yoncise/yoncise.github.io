@@ -1,8 +1,6 @@
 ---
 layout: post
 title: Python Formal Parameter and Argument
-category: Tech
-modified: 2013-08-28
 ---
 首先, 我们定义一个函数:
 

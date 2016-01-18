@@ -1,7 +1,6 @@
 ---
 layout: post
 title: JavaScript Function Scope and Closures
-category: Tech
 ---
 重看了 "JavaScript: The Definitive Guide" 中的 Section 8.8: Function Scope and Closures, 略记录几点.
 

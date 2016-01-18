@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Android - Multitouch 记录
-category: Tech
 ---
 今天看 Android Developer 上的 [Handling Multi-Touch Gestures](http://developer.android.com/training/gestures/multi.html)
 这篇文章, 感觉有几个地方写的不是很好, 费了好大劲才理解.
