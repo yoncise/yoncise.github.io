@@ -13,7 +13,7 @@ category: Tech
 
 最终在 UNIX Network Programming Vol 1 中找到了答案.
 
-> ![UDP](./images/20140315.png "UDP")
+> ![UDP](/images/20140315.png "UDP")
 > 
 > This time, we show the socket send buffer as a dashed box because **it doesn't really
 > exist**. A UDP socket has a send buffer size (which we can change with the SO_SNDBUF
