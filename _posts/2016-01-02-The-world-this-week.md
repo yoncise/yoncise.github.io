@@ -1,3 +1,7 @@
+---
+layout: post
+title: The world this week
+---
 __Iraq's__ armed forces recaptured Ramadi, the capital of Anbar province, which fell to Islamic
 State in May and is just 100km from Baghdad. The country's prime minister, Haider al-Abadi, said
 this IS would be driven from his country by the end of 2016. IS also suffered fresh reverses in
