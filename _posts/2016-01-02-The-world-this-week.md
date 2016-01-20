@@ -55,7 +55,7 @@ Carlos Rosales Mendoza, the founder of La Familia Michoacana, a __Mexican__ drug
 dead along with the bodies of three other people near motorway in western Mexico. He was on the
 most-wanted list of the Drug Enforcement Agency in the United States.
 
-[Reuters](http://cdn.static-economist.com/sites/default/files/imagecache/full-width/images/2015/12/articles/main/20160102_wwp501.jpg)
+![](http://cdn.static-economist.com/sites/default/files/imagecache/full-width/images/2015/12/articles/main/20160102_wwp501.jpg)
 
 A __landslide__ in the southern Chinese city of Shenzhen killed seven people and left dozens
 of others missing. Officials called it an "industrial safety accident", caused by a collapsing
