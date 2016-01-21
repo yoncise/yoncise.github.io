@@ -80,12 +80,12 @@ seats, breaking the traditional two-party system.
 *[stable majority]: 多数席位
 
 __Brazil's__ finance minister, Joaquim Levy, resigned on December 18th. He came into office in
-January 2015 with mandate to slash the budged deficit but was thwarted by a severe recession
+January 2015 with mandate to slash the budget deficit but was thwarted by a severe recession
 and political turmoil. His successor is Nelson Barbosa, who was the planning minister.
 
 *[mandate]: ['mændet] 授权；命令，指令；
 *[slash]: 削减；
-*[thwarted]: 挫败
+*[thwarted]: [θwɔrt] 挫败
 *[severe]: [sɪ'vɪr] 严峻的；严厉的；
 *[recession]: [rɪ'sɛʃən] 衰退；不景气；
 *[turmoil]: ['tɝmɔɪl] 混乱，骚动
