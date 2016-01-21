@@ -15,14 +15,16 @@
   </title>
 
   <script type="text/javascript">
-    if ('ontouchstart' in window || 'onmsgesturechange' in window) {
-      // alert title of abbrs in touch device
-      var abbr = document.getElementsByTagName('abbr'); 
-      for (i = 0; i < abbr.length; i++) { 
-        abbr[i].addEventListener('click', function() { 
-          alert(this.getAttribute('title')); 
-        }, false); 
-      } 
+    document.onload = function() {
+      if ('ontouchstart' in window || 'onmsgesturechange' in window) {
+        // alert title of abbrs in touch device
+        var abbr = document.getElementsByTagName('abbr'); 
+        for (i = 0; i < abbr.length; i++) { 
+          abbr[i].addEventListener('click', function() { 
+            alert(this.getAttribute('title')); 
+          }, false); 
+        } 
+      }
     }
   </script>
 
