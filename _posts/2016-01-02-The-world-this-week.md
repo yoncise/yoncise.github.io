@@ -171,7 +171,7 @@ Paul Ryan, the new Speaker, was commended for his adroit handling of the bill.
 
 *[goodwill]: 友好；好意
 *[extended to]: 给予
-*[America's House of Representatives]: 美国众议院
+*[House of Representatives]: 美国众议院
 *[spending measure]: 消费措施
 *[commended]: 赞美
 *[adroit]: [ə'drɔɪt] 敏捷的，灵巧的；熟练的
