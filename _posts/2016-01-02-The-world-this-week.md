@@ -161,6 +161,7 @@ years. A sizeable contingent of troops is to remain in Afghanistan until at leas
 *[Bagram]: 巴格兰（地名）
 *[Afghanistan]: 阿富汗
 *[flown]: fly的过去分词
+*[deadliest]: deadly 最高级，最致命的
 *[personnel]: 人事部门；全体人员
 *[sizeable]: 大的，相当大的
 *[contingent]: 分遣队；代表团
