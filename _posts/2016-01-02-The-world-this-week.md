@@ -42,7 +42,7 @@ started two years ago, killed some 11,000 people, most of them in Guinea, Liberi
 Stockmarkets responded positively to the Federal Reserve's decision on December 16th to raise
 __interest rates__ for the first time since 2006. After months of dithering the central bank
 lifted the range for its benchmark rate by a quarter of a percentage point to between 0.25%
-and 0.5%
+and 0.5%.
 
 *[Federal Reserve]: （美国）联邦储备系统
 *[dithering]: 抖动
