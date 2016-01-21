@@ -34,7 +34,7 @@ started two years ago, killed some 11,000 people, most of them in Guinea, Liberi
 
 *[outbreak]: 爆发
 *[Ebola]: 埃博拉病毒
-*[rampage]: 暴怒
+*[rampaged]: 暴怒
 *[Guinea]: 几内亚
 *[Liberia]: 利比里亚
 *[Sierra Leone]: 塞拉利昂
