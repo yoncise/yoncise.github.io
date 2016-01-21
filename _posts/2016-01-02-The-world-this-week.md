@@ -76,9 +76,20 @@ __Spain__ held an election before Christmas, which resulted in no stable majorit
 People's Party of Mariano Rajoy came first and the Socialists second. Two smaller parties took
 seats, breaking the traditional two-party system.
 
-__Brazil's__ finance minster, Joaquim Levy, resigned on December 18th. He came into office in
-January 2015 with mandate to slash the budged deficit but was thwarted by a servere recession
+*[ruling]: 统治的
+*[stable majority]: 多数席位
+
+__Brazil's__ finance minister, Joaquim Levy, resigned on December 18th. He came into office in
+January 2015 with mandate to slash the budged deficit but was thwarted by a severe recession
 and political turmoil. His successor is Nelson Barbosa, who was the planning minister.
+
+*[mandate]: ['mændet] 授权；命令，指令；
+*[slash]: 削减；
+*[thwarted]: 挫败
+*[severe]: [sɪ'vɪr] 严峻的；严厉的；
+*[recession]: [rɪ'sɛʃən] 衰退；不景气；
+*[turmoil]: ['tɝmɔɪl] 混乱，骚动
+*[minister]: 部长；
 
 A group of Central American countries plus Mexico reached an agreement to allow some of the 7,000
 migrants from __Cuba__ who are stuck on Costa Rica's border with Nicaragua to travel to the
@@ -87,13 +98,32 @@ and continue by bus. The number of migrants from Cuba has increased since diplom
 the United States began in 2014. Many fear that the rapprochement will end the United States'
 policy of acception émigrés from Cuba if they reach American soil.
 
+*[Costa Rica]: 哥斯达黎加
+*[Nicaragua]: 尼加拉瓜
+*[airlifted]: 空运
+*[El Salvador]: 萨尔瓦多（中美洲）
+*[diplomatic]: 外交的；外交上的；
+*[thaw]: [θɔ] 解冻；融雪
+*[rapprochement]: 友好；恢复邦交；
+*[émigrés]: 流亡者；移居者（尤指因政治因素而移居外国者）
+*[soil]: 土地；土壤；国家；
+
 __Argentina__ lifted exchange controls and allowed the peso to float freely, days after the
 inauguration of its new president, Mauricio Macri. This forms part of a liberalisation programme
 to reverse populist policies of the outgoing government of Cristina Fernández de Kirchner.
 
+*[peso]: 比索（拉丁美洲一些国家和菲律宾的货币单位）；
+*[inauguration]: 就职典礼；开始，开创；开幕式
+*[liberalisation]: 自由化；开放
+*[populist]: 平民主义的；平民主义者的
+
 Carlos Rosales Mendoza, the founder of La Familia Michoacana, a __Mexican__ drug gang, was found
 dead along with the bodies of three other people near motorway in western Mexico. He was on the
 most-wanted list of the Drug Enforcement Agency in the United States.
+
+*[gang]: 黑帮
+*[motorway]: 高速公路
+*[Drug Enforcement Agency]: 缉毒署
 
 ![](http://cdn.static-economist.com/sites/default/files/imagecache/full-width/images/2015/12/articles/main/20160102_wwp501.jpg)
 
