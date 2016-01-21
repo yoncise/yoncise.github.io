@@ -16,7 +16,7 @@
 
   <script type="text/javascript">
     window.onload = function() {
-      if ('ontouchstart' in window || 'onmsgesturechange' in window) {
+      if ('ontouchstart' in window || navigator.maxTouchPoints) {
         // alert title of abbrs in touch device
         var abbr = document.getElementsByTagName('abbr'); 
         for (i = 0; i < abbr.length; i++) { 
