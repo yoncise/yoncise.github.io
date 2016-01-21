@@ -131,20 +131,47 @@ A __landslide__ in the southern Chinese city of Shenzhen killed seven people and
 of others missing. Officials called it an "industrial safety accident", caused by a collapsing
 heap of construction waste. An official who had once overseen the site committed suicide.
 
+*[landslide]: [地质] 山崩；
+*[collapsing]: 折叠；压扁
+*[overseen]: 视察；监视
+
 The chairman of one of __China's__ largest state-owned mobile operators, China Telecom, is being
 investigated by anti-graft officials. The businessman, Chang Xiaobing, is among several senior
 executives who have been targeted in an anti-corruption campaign being waged by President
 Xi Jingping.
 
+*[anti-graft]: 反腐败
+*[anti-corruption]: 反腐败；反贪腐；
+*[be waged]: 由……发动
+
 __Japan__ and __South Korea__ agreed to settle a long-standing dispute over women forced to
 work in Japanese brothels during the second world war. Japan apologised and said it would pay
 ¥1 billion ($8.3m) to help victims.
+
+*[long-standing]: 长期存在的；
+*[dispute]: ['dɪs'pjʊt] 辩论；争吵
+*[brothels]: ['brɑθl] 妓院
 
 The bodies of six American troops killed by a Taliban suicided-bomber near Bagram air base in
 __Afghanistan__ were flown home. It was the deadliest attack on American personnel in country in
 years. A sizeable contingent of troops is to remain in Afghanistan until at least the start of
 2017.
 
+*[troops]: [军] 部队；
+*[Bagram]: 巴格兰（地名）
+*[Afghanistan]: 阿富汗
+*[flown]: fly的过去分词
+*[personnel]: 人事部门；全体人员
+*[sizeable]: 大的，相当大的
+*[contingent]: 分遣队；代表团
+
 The season of goodwill extended to America's House of Representatives, which passed a $1.8 trillion
 __spending measure__ before Christmas with little argument and thus avoided a government shutdown.
 Paul Ryan, the new Speaker, was commended for his adroit handling of the bill.
+
+*[goodwill]: 友好；好意
+*[extended to]: 给予
+*[America's House of Representatives]: 美国众议院
+*[spending measure]: 消费措施
+*[commended]: 赞美
+*[adroit]: [ə'drɔɪt] 敏捷的，灵巧的；熟练的
