@@ -9,6 +9,11 @@ America’s first Olympic games in August, giving Brazilians a chance to embark 
 do best: throwing a really spectacular party. Instead, Brazil faces political and economic 
 disaster.
 
+*[exuberant]: 繁茂的；生气勃勃的，充溢的
+*[Rio de Janeiro]: 里约热内卢
+*[embark]: 从事
+*[spectacular]: 壮观的，惊人的；
+
 On December 16th Fitch became the second of the three big credit-rating agencies to downgrade 
 Brazil’s debt to junk status. Days later Joaquim Levy, the finance minister appointed by the 
 president, Dilma Rousseff, to stabilise the public finances, quit in despair after less than 
@@ -18,18 +23,56 @@ time, Brazil’s governing coalition has been discredited by a gargantuan briber
 Petrobras, a state-controlled oil company. And Ms Rousseff, accused of hiding the size of the 
 budget deficit, faces impeachment proceedings in Congress.
 
+*[Fitch]: 惠誉国际 欧资国际评级机构
+*[debt]: 债务；借款；
+*[junk]: 垃圾，废物
+*[appointed]: 任命；指定
+*[Dilma Rousseff]: 巴西首位女总统迪尔玛·罗塞夫
+*[despair]: 绝望；
+*[sanction]:  制裁，处罚；
+*[racked]: 折磨；
+*[coalition]: 联合；结合，合并
+*[been discredited]: 失去信任 
+*[gargantuan]: 庞大的，巨大的
+*[bribery]: 贿赂；受贿；
+*[scandal]: 丑闻；流言蜚语；
+*[accused]: 指责；控告
+*[impeachment]: 弹劾；控告；
+*[proceedings]: 诉讼；行动（proceeding的复数形式）；会议记录；议程
+
 As the B in BRICS, Brazil is supposed to be in the vanguard of fast-growing emerging economies. 
 Instead it faces political dysfunction and perhaps a return to rampant inflation. Only hard 
 choices can put Brazil back on course. Just now, Ms Rousseff does not seem to have the stomach 
 for them.
 
+*[vanguard]: 先锋
+*[emerging]: 新兴的；出现的；
+*[dysfunction]: 功能紊乱；
+*[rampant]: 猖獗的；蔓延的；
+*[inflation]: 膨胀；通货膨胀；
+*[on course]: 在正确方向上
+*[have the stomach for]: 有勇气
+
 __Dismal Dilma__
+
+*[Dismal]: 凄凉的
+*[Dilma]: 迪尔玛·罗塞夫
 
 Brazil’s suffering, like that of other emerging economies, stems partly from the fall in global 
 commodity prices. But Ms Rousseff and her left-wing Workers’ Party (PT) have made a bad situation 
 much worse. During her first term, in 2011-14, she spent extravagantly and unwisely on higher 
 pensions and unproductive tax breaks for favoured industries. The fiscal deficit swelled from 
 2% of GDP in 2010 to 10% in 2015.
+
+*[stems from]: 起源于
+*[commodity]: 商品，货物；日用品
+*[extravagantly]: 挥霍无度地
+*[unwisely]: 不明智地；愚笨地
+*[pensions]: 养老金
+*[unproductive]: 非生产性的；徒劳的；没有收益的
+*[tax breaks]: 税收减免；
+*[fiscal]: 会计的，财政的；
+*[swelled]: 膨胀；隆起；增大（swell的过去分词）
 
 Brazil’s crisis managers do not have the luxury of waiting for better times to begin reform. 
 At 70% of GDP, public debt is worryingly large for a middle-income country and rising fast. 
