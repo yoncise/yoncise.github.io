@@ -136,10 +136,6 @@ hr {
   border-bottom: 1px solid #fff;
 }
 
-abbr {
-  font-size: 85%;
-  color: #555;
-}
 abbr[title] {
   cursor: help;
   border-bottom: 1px dotted #e5e5e5;
