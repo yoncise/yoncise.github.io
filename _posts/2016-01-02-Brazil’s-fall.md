@@ -149,8 +149,8 @@ fourth-lowest.
 *[incompetent]: 无能力的，不胜任的；
 *[shielded]: 隔离的；屏蔽了的；
 
-To reform work and pensions, Ms Rousseff must face up to problems that have been decades in the 
-making. Some 90% of public spending is protected from cuts, partly by the constitution which, in 1988, 
+To reform work and pensions, Ms Rousseff must face up to problems that have been decades in the making. 
+Some 90% of public spending is protected from cuts, partly by the constitution which, in 1988, 
 celebrated the end of military rule by enshrining generous job protection and state benefits. Because 
 it is so hard to reform, Brazil’s public sector rivals European welfare states for size but emerging 
 ones for inefficiency. Long a drain on economic vitality, Brazil’s overbearing state is now a chief 
