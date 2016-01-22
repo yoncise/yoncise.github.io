@@ -84,6 +84,11 @@ has little choice but to raise taxes and cut spending.
 *[crisis managers]: 危机处理者，善于处理危机的人
 *[luxury]: 舒适的环境；给人以享受的事物 奢侈，奢华；
 *[reform]: 改革，改良；
+*[worryingly]: 焦虑地；烦恼地
+*[servicing]: 维修
+*[crushing]: 压倒的；决定性的；
+*[monetary]: 货币的；财政的
+*[destabilising]: destabilise 使动摇
 
 Mr Levy made a game attempt to renovate the building while putting out the fire. He trimmed 
 discretionary spending by a record 70 billion reais ($18 billion) in 2015 and tightened 
@@ -91,17 +96,41 @@ eligibility for unemployment insurance. But it was not enough. The recession dra
 tax revenues. Ms Rousseff gave her finance minister only lukewarm support and the PT was hostile 
 towards him. The opposition, intent on ousting the president, was in no mood to co-operate.
 
+*[renovate]: 更新；修复；
+*[putting out the fire]: 灭火
+*[discretionary]: 任意的；自由决定的
+*[record]: 创纪录的
+*[reais]: 巴西的流通货币，雷里尔
+*[eligibility]: 适任，合格；被选举资格
+*[lukewarm]: 冷淡的；微温的；
+*[hostile]: 敌对的，敌方的；
+*[ousting]: 驱逐；剥夺；
+*[PT]: Partido dos Trabalhadores 巴西劳工党
+
+
 Although he was a senior treasury official during Ms Rousseff’s disastrous first term, Nelson 
 Barbosa may be able to accomplish more as finance minister. He has political support within 
 the PT. He also has bargaining power, because Ms Rousseff cannot afford to lose another finance 
 minister. One early test will be whether Mr Barbosa persuades a recalcitrant Congress to reinstate 
 an unpopular financial-transactions tax.
 
+*[treasury]: 财政部；
+*[disastrous]: 灾难性的；
+*[bargaining]: 讨价还价；交易；交涉
+*[persuades]: 说服，劝说；
+*[recalcitrant]: 反抗的；反对的；
+*[Congress]: 国会；
+*[reinstate]: 使恢复；
+
 A central target should be pensions. The minimum benefit is the same as the minimum wage, which 
 has risen by nearly 90% in real terms over the past decade. Women typically retire when they are 
 50 and men stop work at 55, nearly a decade earlier than the average in the OECD (a club of mostly 
 rich countries). Brazil’s government pays almost 12% of GDP to pensioners, a bigger share than 
 older, richer Japan.
+
+*[pensions]: 养老金
+*[wage]: 工资；
+*[pensioners]: 领退休金者
 
 If Brazil is to fulfil its promise, much, much more is needed. A typical manufacturing firm spends 
 2,600 hours a year complying with the country’s ungainly tax code; the Latin American average is 
@@ -110,12 +139,35 @@ employees. Brazil has shielded its firms from international competition. That is
 among 41 countries whose performance was measured by the OECD, its manufacturing productivity is the 
 fourth-lowest.
 
+*[fulfil]: 履行；完成；
+*[manufacturing]: 制造的；制造业的
+*[firm]: 公司；
+*[complying]: 遵守；顺从，遵从；
+*[ungainly]: 笨拙的；不雅的
+*[tax code]: 税收法
+*[Mussolini]: 墨索里尼
+*[incompetent]: 无能力的，不胜任的；
+*[shielded]: 隔离的；屏蔽了的；
+
 To reform work and pensions, Ms Rousseff must face up to problems that have been decades in the 
 making. Some 90% of public spending is protected from cuts, partly by the constitution which, in 1988, 
 celebrated the end of military rule by enshrining generous job protection and state benefits. Because 
 it is so hard to reform, Brazil’s public sector rivals European welfare states for size but emerging 
 ones for inefficiency. Long a drain on economic vitality, Brazil’s overbearing state is now a chief 
 cause of the fiscal crisis.
+
+*[decades in the making]: 几十年来积累形成的
+*[military]: 军事的；
+*[enshrining]: 铭记，珍藏；
+*[sector]: 部门；
+*[rivals]: 竞争
+*[welfare]: 福利
+*[emerging]: 形成；浮现；
+*[drain]: 消耗
+*[economic]: 经济的
+*[vitality]: 活力，生气
+*[overbearing state]: 专横的国家
+*[chief]: 主要的；
 
 Overcoming such deep-rooted practices would be hard for any government. In Brazil it is made all the 
 harder by a daft political system, which favours party fragmentation and vote-buying and attracts 
@@ -125,10 +177,39 @@ gridlock. Congressmen represent entire states, some as populous as neighbouring 
 which makes campaigning ruinously expensive—one reason why politicians skimmed off huge amounts of money 
 from Petrobras.
 
+*[daft]: 愚笨的；
+*[fragmentation]: 分裂；
+*[vote-buying]: 贿选
+*[attracts]: 吸引；
+*[mercenaries]: 雇佣兵
+*[commitment]: 承诺，保证；
+*[lower house]: 下议院
+*[legislative]: 立法的；有立法权的
+*[gridlock]: 僵局
+*[Congressmen]: 国会议员
+*[populous]: 人口稠密的；
+*[campaigning]: 参加竞选；
+*[ruinously]: 毁灭地；败坏地
+*[skimmed off]: 从……挑选出
+*[Petrobras]: 巴西石油
+
 It is therefore hard, despite Mr Barbosa’s advantages, to feel optimistic about the prospects for deep 
 reform. Voters hold politicians in contempt. The opposition is bent on impeaching Ms Rousseff, a misguided 
 battle that could dominate the political agenda for months. The PT has no appetite for austerity. Achieving
 the three-fifths support in both houses of Congress needed for constitutional reforms will be a tall order.
+
+*[prospects]: 前景；预期；
+*[Voters]: 选民，投票人
+*[contempt]: 轻视，蔑视；
+*[bent]: 爱好，嗜好
+*[impeaching]: 弹劾；
+*[misguided]: 被误导的
+*[battle]: 战役；斗争
+*[dominate]: 控制；支配；
+*[agenda]: 议程；日常工作事项
+*[appetite]: 嗜好
+*[austerity]: 紧缩；朴素；
+*[tall order]: 离谱的要求；难以完成的任务
 
 __Reckless Rousseff__
 
@@ -137,3 +218,10 @@ default unlikely. Instead, the country may end up inflating away its debts. Braz
 lift tens of millions of people out of rag-and-flip-flop poverty. Recession will halt that, or even begin to 
 reverse it. The hope is that Brazil, which has achieved hard-won economic and democratic stability, does not 
 lapse once again into chronic mismanagement and turmoil.
+
+*[Reckless]: 鲁莽的，不顾后果的；
+*[default]: 违约；
+*[democratic]: 民主的；
+*[lapse]: (一时的) 走神，判断错误
+*[chronic]: 慢性的；长期的；
+*[mismanagement]: 管理不善；处置失当
