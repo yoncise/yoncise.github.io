@@ -81,6 +81,10 @@ Bank cannot easily use monetary policy to fight inflation, currently 10.5%, as h
 risk destabilising the public finances even more by adding to the interest bill. Brazil therefore 
 has little choice but to raise taxes and cut spending.
 
+*[crisis managers]: 危机处理者，善于处理危机的人
+*[luxury]: 舒适的环境；给人以享受的事物 奢侈，奢华；
+*[reform]: 改革，改良；
+
 Mr Levy made a game attempt to renovate the building while putting out the fire. He trimmed 
 discretionary spending by a record 70 billion reais ($18 billion) in 2015 and tightened 
 eligibility for unemployment insurance. But it was not enough. The recession dragged down 
