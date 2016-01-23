@@ -224,5 +224,5 @@ lapse once again into chronic mismanagement and turmoil.
 *[democratic]: 民主的；
 *[lapse]: (一时的) 走神，判断错误
 *[chronic]: 慢性的；长期的；
-*[flip-flop]: 人字拖
+*[rag-and-flip-flop]: rag：破衣服， flip flop：人字拖
 *[mismanagement]: 管理不善；处置失当
