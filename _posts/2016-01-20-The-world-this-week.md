@@ -177,4 +177,4 @@ Paul Ryan, the new Speaker, was commended for his adroit handling of the bill.
 *[commended]: 赞美
 *[adroit]: [ə'drɔɪt] 敏捷的，灵巧的；熟练的
 
-> [The Economist, Jan 2nd](http://www.economist.com/news/world-week/21684815-world-week)
+> [The world this week | The Economist, Jan 2nd](http://www.economist.com/news/world-week/21684815-world-week)
