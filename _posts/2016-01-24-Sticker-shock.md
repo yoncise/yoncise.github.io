@@ -48,7 +48,7 @@ Sudan and Syria will affect aid workers and plotters alike.
 
 It is a similar story with unauthorised migration. Identifying visitors who might overstay their welcome is a core
 duty of visa officers. Western countries often require several months’ bank statements, pay slips, proof of financial 
-and property holdings, tax returns and letters from bosses promising that their employees will return (see article). 
+and property holdings, tax returns and letters from bosses promising that their employees will return. 
 These strictures also put off legitimate travellers. When Canada lifted visa requirements for Czech citizens in 2007, 
 the number of Czech tourists jumped by a third; when restrictions were reintroduced in 2009, after a rise in asylum 
 applications, arrivals fell by 70% over three years. Rather than gumming up all travel, it made more sense to process 
