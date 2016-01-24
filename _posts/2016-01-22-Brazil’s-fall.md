@@ -227,4 +227,4 @@ lapse once again into chronic mismanagement and turmoil.
 *[rag-and-flip-flop]: rag：破衣服， flip flop：人字拖
 *[mismanagement]: 管理不善；处置失当
 
-> [The Economist, Jan 2nd 2016](http://www.economist.com/news/leaders/21684779-disaster-looms-latin-americas-biggest-economy-brazils-fall)
+> [Brazil’s fall | The Economist, Jan 2nd 2016](http://www.economist.com/news/leaders/21684779-disaster-looms-latin-americas-biggest-economy-brazils-fall)
