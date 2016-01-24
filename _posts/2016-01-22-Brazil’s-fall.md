@@ -2,6 +2,8 @@
 layout: post
 title: Brazil’s fall
 ---
+__Disaster looms for Latin America’s biggest economy__
+
 ![](http://cdn.static-economist.com/sites/default/files/imagecache/full-width/images/print-edition/20160102_LDD001_0.jpg)
 
 AT THE start of 2016 Brazil should be in an exuberant mood. Rio de Janeiro is to host South 
