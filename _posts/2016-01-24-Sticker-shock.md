@@ -49,4 +49,4 @@ ten-year visas; Europe routinely grants ten-day ones. That means travellers to t
 prove their good intentions, leading to more otiose paperwork, and fewer visits. Necessary as they are, visas 
 need not be so evil.
 
-[Sticker shock \| The Economist, Jan 2nd 2016](http://www.economist.com/news/leaders/21684782-they-have-their-uses-burden-visas-impose-travellers-and-recipient-countries-too)
+> [Sticker shock \| The Economist, Jan 2nd 2016](http://www.economist.com/news/leaders/21684782-they-have-their-uses-burden-visas-impose-travellers-and-recipient-countries-too)
