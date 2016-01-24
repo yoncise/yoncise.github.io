@@ -91,7 +91,7 @@ against intelligence and criminal databases will usually obviate the need for le
 *[inquisitions]: 调查；宗教法庭；审讯
 *[intelligence]: 情报机关；
 
-__La visa loca__
+__La visa loca__［^2]
 
 Usually, but not always. Countries will want to investigate some applicants in greater detail. So the third step 
 is to grant longer visas to those people who have easily cleared the necessary hurdles. America routinely grants 
@@ -103,5 +103,6 @@ need not be so evil.
 *[otiose]: 没有用的；不必要的；
 
 [^1]: Schengen, 卢森堡边境小镇。1985年，德国、法国、荷兰、比利时、卢森堡五国在此签订《申根协定》：其成员国对短期逗留者颁发统一格式的签证，即申根签证。申请人一旦获得某个国家的签证，即可在签证有效期内在所有申根国家自由旅行。
+[^2]: 一部 2005 年的菲律宾喜剧电影，讲的是一个菲律宾的的出租车司机梦想获得去美国的签证。[La visa loca](https://en.wikipedia.org/wiki/La_Visa_Loca)
 
 > [Sticker shock \| The Economist, Jan 2nd 2016](http://www.economist.com/news/leaders/21684782-they-have-their-uses-burden-visas-impose-travellers-and-recipient-countries-too)
