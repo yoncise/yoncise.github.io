@@ -38,7 +38,7 @@ Sudan and Syria will affect aid workers and plotters alike.
 *[policymakers]: 决策者
 *[proponents]: 支持者；建议者
 *[nationality]: 国籍
-*[bluntest]: 迟钝的
+*[bluntest]: 最迟钝的，blunt，迟钝的
 *[instruments]: 工具；
 *[scooping up]: 兜接，舀上来
 *[legions]: 大量，众多
