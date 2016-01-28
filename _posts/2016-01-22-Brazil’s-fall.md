@@ -59,7 +59,7 @@ for them.
 
 __Dismal Dilma__
 
-*[Dismal]: 凄凉的
+*[Dismal]: 十分差劲不称职
 *[Dilma]: 迪尔玛·罗塞夫
 
 Brazil’s suffering, like that of other emerging economies, stems partly from the fall in global 
