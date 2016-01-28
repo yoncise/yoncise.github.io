@@ -7,7 +7,7 @@ __The Republican candidates’ tax plans are welcome for their detail, but not t
 ![](http://cdn.static-economist.com/sites/default/files/imagecache/full-width/images/print-edition/20160102_LDP001_0.jpg)
 
 A MONTH before the first primary contest in Iowa, the Republican race is more warlike than wonkish. Yet the candidates have 
-found time to write sometimes intricate plans to reform America’s taxes (see article). Though no one blueprint will become 
+found time to write sometimes intricate plans to reform America’s taxes. Though no one blueprint will become 
 law, if America chooses a Republican president, he may well have a Republican Congress to work with. At that point, the 
 winner’s tax plan will seem less like a campaign gimmick and more like a promise to be kept.
 
