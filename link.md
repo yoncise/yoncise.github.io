@@ -3,4 +3,4 @@ layout: page
 title: Link
 ---
 
-- [xiaoyu2er](http://xiaoyu2er.github.io/)
+- [宗岩琦的博客 \| xiaoyu2er](http://xiaoyu2er.github.io/)
