@@ -11,9 +11,7 @@ __Disaster looms for Latin America’s biggest economy__
 AT THE start of 2016 Brazil should be in an exuberant mood. Rio de Janeiro is to host South 
 America’s first Olympic games in August, giving Brazilians a chance to embark on what they 
 do best: throwing a really spectacular party. Instead, Brazil faces political and economic 
-disaster[^1].
-
-[^1]: hoho
+disaster.
 
 *[exuberant]: 繁茂的；生气勃勃的，充溢的
 *[Rio de Janeiro]: 里约热内卢
