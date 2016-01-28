@@ -93,9 +93,9 @@ against intelligence and criminal databases will usually obviate the need for le
 *[inquisitions]: 调查；宗教法庭；审讯
 *[intelligence]: 情报机关；
 
-__La visa loca__[^La visa loca]
+__La visa loca__[^La-visa-loca]
 
-[^La visa loca]: 西班牙语，Crazy visa
+[^La-visa-loca]: 西班牙语，Crazy visa
 
 Usually, but not always. Countries will want to investigate some applicants in greater detail. So the third step 
 is to grant longer visas to those people who have easily cleared the necessary hurdles. America routinely grants 
