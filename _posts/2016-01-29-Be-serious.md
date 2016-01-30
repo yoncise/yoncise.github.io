@@ -19,7 +19,7 @@ winner’s tax plan will seem less like a campaign gimmick and more like a promi
 *[intricate]: |ˈɪntrɪkət| 错综复杂的
 *[gimmick]: |ˈgɪmɪk| 花招
 
-[^wonkish]: 形容词或者名词后面加 -ish，除非是国名地名转指语言或者国民以外，其余就是 大概，一些，左右，的意思。具体是哪个，根据语境来判断。
+[^wonkish]: 形容词或者名词后面加 -ish，除非是国名地名专指语言或者国民以外，其余就是 大概，一些，左右，的意思。具体是哪个，根据语境来判断。
 
 Republicans are right to seek to reform America’s incoherent, tangled-up tax system. America’s corporate tax is a toxic 
 combination of a high rate—the highest in the OECD—and a series of complex distortions, which encourage bad behaviour such 
