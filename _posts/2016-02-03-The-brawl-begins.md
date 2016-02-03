@@ -79,4 +79,4 @@ Pessimism about America is misplaced. The economy is in better shape than that o
 so is violent crime. But mainstream Republicans have pilloried Barack Obama with such abandon that they are struggling to answer Mr 
 Trump and Mr Cruz. If anyone should regret the spectacle about to unfold, it is they.
 
-> [The brawl begins | The Economist, Jan 30th 2016](http://www.economist.com/news/leaders/21689543-marvel-jaw-dropping-spectacle-then-worry-american-politics-has-taken-dangerous)
+> [The brawl begins \| The Economist, Jan 30th 2016](http://www.economist.com/news/leaders/21689543-marvel-jaw-dropping-spectacle-then-worry-american-politics-has-taken-dangerous)
