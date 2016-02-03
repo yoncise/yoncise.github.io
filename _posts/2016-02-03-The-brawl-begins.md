@@ -20,7 +20,8 @@ The choice was supposed to be between a Bush and a Clinton—more a coronation t
 most powerful office has been more dramatically upended by outsiders than any presidential campaign in the past half-century. America, 
 what on earth is going on?
 
-Bigger and brasher
+__Bigger and brasher__
+
 The United States is not the only country where the establishment is on the ropes. Britain’s Labour Party is in thrall to a man 
 well to the left of Mr Sanders. In the first round of France’s recent regional elections, the far-right National Front won the 
 largest vote. Populists are leading the polls in the Netherlands and running the government in Poland and Hungary. In politically 
@@ -65,7 +66,8 @@ to destroy each other; perhaps what is left of Mr Bush’s $100m war chest will 
 now, both populists have a chance of taking the fight to the convention and even, barring a backroom establishment deal, of winning 
 the nomination.
 
-The 50:50 nation
+__The 50:50 nation__
+
 That prospect worries this newspaper. Neither Mr Trump nor Mr Cruz offers coherent economics or wise policy. Neither passes the 
 test of character. Yet, merely by being on the ballot in November either would come close to the presidency.
 
