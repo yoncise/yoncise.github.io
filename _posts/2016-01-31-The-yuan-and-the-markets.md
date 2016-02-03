@@ -14,7 +14,7 @@ of the problem is China’s management of its economy.
 For well over a decade, China has been the engine of global growth. But the blistering pace of economic expansion has 
 slowed. The stockmarket has been in turmoil, again. Although share prices in China matter little to the real economy, 
 seesawing stocks feed fears among investors that the Communist Party does not have the wisdom to manage the move from 
-Mao to market. The rest of the world looks at the debts and growing labour unrest inside China (see article), and it 
+Mao to market. The rest of the world looks at the debts and growing labour unrest inside China, and it 
 shudders. Nowhere are those worries more apparent—or more consequential—than in the handling of its currency, the yuan.
 
 __Faulty forex__
@@ -58,7 +58,7 @@ financial options for Chinese savers is unpopular, wasteful and bad for the econ
 the ructions that liberalisation creates. For Xi Jinping, the president, now in his fourth year in charge, that dilemma 
 seems to crop up time and again (see Briefing). He needs middle-class support, but feels threatened by the capacity of 
 the middle class to make trouble. He wants state-owned enterprises to become more efficient, but also for them to give 
-jobs to the soldiers he is booting out of the People’s Liberation Army (see article). He wants to “cage power” by 
+jobs to the soldiers he is booting out of the People’s Liberation Army. He wants to “cage power” by 
 strengthening the rule of law and by invoking the constitution, yet he is overseeing a vicious clampdown on dissent and 
 free speech.
 
