@@ -80,7 +80,7 @@ currency to fall even further in future. And, despite a record trade surplus of 
 reasons for it to do so, at least against the dollar, which is still being propelled upwards by tighter monetary policy 
 in America.
 
-*[trade surplus]: |ˈsɜːpləs| 贸易顺差
+*[trade surplus]: \|ˈsɜːpləs| 贸易顺差
 *[propelled]: |prəˈpel| 推进
 
 The problem is that the expectation of depreciation risks becoming a self-fulfilling loss of confidence. That is a risk 
