@@ -80,8 +80,9 @@ currency to fall even further in future. And, despite a record trade surplus of 
 reasons for it to do so, at least against the dollar, which is still being propelled upwards by tighter monetary policy 
 in America.
 
-*[trade surplus]: \|ˈsɜːpləs\| 贸易顺差
-*[propelled]: \|prəˈpel\| 推进
+*[trade surplus]: |ˈsɜːpləs| 贸易顺差
+*[propelled]: |prəˈpel| 推进
+*[savers]: 储户 
 
 The problem is that the expectation of depreciation risks becoming a self-fulfilling loss of confidence. That is a risk 
 even for a country with foreign-exchange reserves of more than $3 trillion. A sharply weaker currency is also a threat 
@@ -92,7 +93,6 @@ Either those companies will fail, or China’s state-owned banks will allow them
 *[self-fulfilling]: 实现自己抱负的，自我实现的
 *[foreign-exchange]: 外汇
 *[limp]: 跛行
-
 
 The government has reacted by trying to rig markets. The PBOC has squeezed the fledgling offshore market in Hong Kong by 
 buying up yuan so zealously that the overnight interest rate spiked on January 12th at 67%. Likewise, in the stockmarket 
