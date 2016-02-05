@@ -102,7 +102,7 @@ it has instructed the “national team” of state funds to stick to the policy 
 *[squeezed]: |skwiːz| 挤
 *[fledgling]: |ˈfledʒlɪŋ| 初出茅庐的人
 *[zealously]: |ˈzeləsli| 热情的
-*[spiked]: |spaɪk| 尖状物
+*[spiked]: |spaɪk| 钉住; 尖状物
 *[stick to]: 坚持做, 继续使用
 
 __One step back, two forwards__
