@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Sticker shock
+published: false
 ---
 __They have their uses, but the burden visas impose on travellers and recipient countries is too high__
 

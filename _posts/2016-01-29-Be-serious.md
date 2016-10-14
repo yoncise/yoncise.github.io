@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Be serious
+published: false
 ---
 __The Republican candidates’ tax plans are welcome for their detail, but not their contents__
 

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: The yuan and the markets
+published: false
 ---
 
 __Strains on the currency suggest that something is very wrong with China’s politics__
