@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "MyBatis 记录二: lazy loading"
+date: 2016-11-05 23:01:00
 ---
 
 *基于 v3.4.1*
@@ -92,9 +93,9 @@ public Object invoke(Object enhanced, Method method, Method methodProxy, Object[
 
 ### aggressiveLazyLoading
 
-项目中开启了懒加载后, 准备测试下是否真的启用了懒加载, 于是打印日志看下对应的属性在调用相应的方法前是否是 null.
+项目中开启了懒加载后, 准备测试下是否真的启用了懒加载, 于是打印日志看了下对应的属性在调用相应的方法前是否是 `null`.
 结果发现属性每次都被加载了, 以为 MyBatis 能拦截属性的直接访问或者生成代理类的时候会分析相应字节码,
-如果发现字节码中有属性的访问就在访问改方法时加载属性, 查了下 cglib 和 javassist 文档感觉并没有相应的功能啊.
+如果发现字节码中有属性的访问就在访问该方法时加载属性, 查了下 cglib 和 javassist 文档感觉并没有相应的功能啊.
 
 最后发现原来是因为 `aggressiveLazyLoading` 默认是开启的, 因为我访问了对象的其他方法所以属性被加载了.
 
