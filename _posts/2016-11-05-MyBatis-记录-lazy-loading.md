@@ -70,7 +70,7 @@ public Object invoke(Object enhanced, Method method, Method methodProxy, Object[
       } else { // 这段是重点
         if (lazyLoader.size() > 0 && !FINALIZE_METHOD.equals(methodName)) {
           if (aggressive || lazyLoadTriggerMethods.contains(methodName)) { 
-            // 如果开启了 aggressive 或者调用的是 lazyLoadTriggerMethods 中的设置的方法, 则加载所有属性
+            // 如果开启了 aggressive 或者调用的是 lazyLoadTriggerMethods 中设置的方法, 则加载所有属性
             lazyLoader.loadAll();
           } else if (PropertyNamer.isProperty(methodName)) { // 判断方法是否是以 get, set, is 开头
             final String property = PropertyNamer.methodToProperty(methodName); // 方法名转换成属性名
@@ -100,12 +100,12 @@ public Object invoke(Object enhanced, Method method, Method methodProxy, Object[
 
 ### IDEA
 
-千万不要用下断点的方式查看对应的属性有没有没加载, 因为 IDEA 在 debug 的时候 *应该* 是会调用 `lazyLoadTriggerMethods`
-中的方法的, 所以也会导致属性被加载.
+千万不要用下断点的方式查看对应的属性有没有被加载, *可能* 是因为 IDEA 在 debug 的时候会调用 `lazyLoadTriggerMethods`
+中的方法的, 所以导致属性被加载.
 
 ### Jackson
 
-MyBatis 生成的代理类会多出一个 `handler` 的属性, 会导致 Jackson 序列化失败, 
+MyBatis 生成的代理类会多出一个 `handler` 的属性, 从而导致 Jackson 序列化失败, 
 可以通过在类上添加注解来忽略该属性:
 
 ``` java
