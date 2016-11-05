@@ -86,7 +86,6 @@ public Object invoke(Object enhanced, Method method, Method methodProxy, Object[
     throw ExceptionUtil.unwrapThrowable(t);
   }
 }
-}
 ```
 
 ## 注意事项
