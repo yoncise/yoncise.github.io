@@ -5,8 +5,11 @@ title: MyBatis 记录 (二): lazy loading
 
 *基于 v3.4.1*
 
-有时候我们配置了复杂的 ResultMap (使用了 association 和 collection), 但是不是每次都会使用到,
-这时候为了节约资源, 我们可以配置懒加载.
+为了映射对象中复杂的关联对象, 我们在 ResultMap 中可以配置 association 和 collection.
+这两者的实现方式可以通过 1. 再请求一次 `select` (Nested Select)
+2. 通过 `join` 将所有的属性读取出来 (Nested Results). 
+但有时候我们并不会使用到对象中所有的属性, 所以这些额外的从数据库拉来的数据就浪费了.
+对于通过 `select` 实现的方式我们可以使用懒加载来提升效率.
 
 ## 配置
 
@@ -14,7 +17,7 @@ title: MyBatis 记录 (二): lazy loading
 
 默认为 `false`, 也就是不使用懒加载. 所以如果 association 和 collection 使用了 `select`,
 那么 MyBatis 会一次性执行所有的查询. 如果 accociation 和 collection 中的 `fetchType`
-指定为 'lazy', 那么即使 `lazyLoadingEnabled` 为 false, MyBatis 也会使用懒加载.
+指定为 `lazy`, 那么即使 `lazyLoadingEnabled` 为 false, MyBatis 也会使用懒加载.
 
 Java 配置中 `@One` 和 `@Many` 的 `fetchType` 支持三个值: `LAZY`, `EAGER`, `DEFAULT`,
 其中 `DEFAULT` 的意思是跟随全局设置即 `lazyLoadingEnabled`.
@@ -98,12 +101,12 @@ public Object invoke(Object enhanced, Method method, Method methodProxy, Object[
 
 ### IDEA
 
-千万不要用下断点的方式查看对应的属性有没有没加载, 因为 IDEA 在 debug 的时候应该是会调用 `lazyLoadTriggerMethods`
+千万不要用下断点的方式查看对应的属性有没有没加载, 因为 IDEA 在 debug 的时候 *应该* 是会调用 `lazyLoadTriggerMethods`
 中的方法的, 所以也会导致属性被加载.
 
 ### Jackson
 
-MyBatis 生成的代理类会多出一个 `handler` 的属性, 会导致 Jaskson 序列化成 json 时失败, 
+MyBatis 生成的代理类会多出一个 `handler` 的属性, 会导致 Jackson 序列化失败, 
 可以通过在类上添加注解来忽略该属性:
 
 ``` java
