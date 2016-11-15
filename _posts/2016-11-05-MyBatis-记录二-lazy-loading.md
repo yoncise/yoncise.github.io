@@ -110,7 +110,7 @@ MyBatis 生成的代理类会多出一个 `handler` 的属性, 从而导致 Jack
 可以通过在类上添加注解来忽略该属性:
 
 ``` java
-@JsonIgnoreProperties({"handler"})
+@JsonIgnoreProperties("handler")
 public class MyDO {
 }
 ```
