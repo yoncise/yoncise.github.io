@@ -82,3 +82,5 @@ busy 说明该连接正在使用, idle 说明该连接闲置. 维持连接是需
 | initialSize | 10 | - | 连接池初始创建的连接数量 |
 | initSQL | null | - | 连接创建时执行的初始化语句 (例如 `SET NAMES 'utf8mb4', time_zone = '+0:00';`) |
 | testOnBorrow | false | - | 从连接池获取连接时是否验证连接的有效性. (可设置 `validationInterval`, 防止频繁验证) |
+
+> [Configuring jdbc-pool for high-concurrency](http://www.tomcatexpert.com/blog/2010/04/01/configuring-jdbc-pool-high-concurrency)
