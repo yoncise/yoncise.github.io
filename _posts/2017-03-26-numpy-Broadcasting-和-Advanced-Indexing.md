@@ -1,6 +1,6 @@
 ---
 layout: post
-title: numpy Broadcasting 和 Indexing
+title: numpy Broadcasting 和 Advanced Indexing
 ---
 
 ## Broadcasting
@@ -33,9 +33,15 @@ Broadcasting 就两条规则:
                [ 0.,  1.,  2.,  3.]])
 
 
-## Indexing
+## Advanced Indexing
 
-Indexing 分为两种情况: 1). Integer 的数组 2). Boolean 的数组.
+所谓 Advanced Indexing 就是, `a[obj]` 中的 `obj` 属于下面三种情况:
+
+1. 不是 tuple
+2. 是 ndarray (值为 Integer 或 Boolean)
+3. 是一个 tuple 但其中的值至少有一个是 sequence 或 ndarray (值为 Integer 或 Boolean)
+
+Advanced Indexing 分为两种情况: 1). Integer 的数组 2). Boolean 的数组.
 
 ### Integer
 
@@ -53,7 +59,7 @@ Indexing 分为两种情况: 1). Integer 的数组 2). Boolean 的数组.
 
 2. 最终结果为:
 
-        [a[2][2], a[1][2]]
+        [a[2, 2], a[1, 2]]
 
 ### Boolean
 
@@ -86,3 +92,5 @@ ps. indexing 时尽量使用 array 而不是 python 自带的 list, 因为 `a[id
 > [Broadcasting rules](https://docs.scipy.org/doc/numpy-dev/user/quickstart.html#broadcasting-rules)
 >
 > [Fancy indexing and index tricks](https://docs.scipy.org/doc/numpy-dev/user/quickstart.html#fancy-indexing-and-index-tricks)
+>
+> [Advanced Indexing](https://docs.scipy.org/doc/numpy/reference/arrays.indexing.html#advanced-indexing)
