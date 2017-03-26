@@ -16,7 +16,7 @@ Broadcasting 就两条规则:
 **prepend** `1`, 直到两个数组的 ndim 一样.
 
     比如: 数组 `a` 和 `b` 的 shape 分别为 `(3, 4)` 和 `(4)`,
-    那么, 根据规则一, 会将 `b` 的 shape 变成 `(1, 3)` (注意是 prepend, 所以不是变成 `(4, 1)`)
+    那么, 根据规则一, 会将 `b` 的 shape 变成 `(1, 4)` (注意是 prepend, 所以不是变成 `(4, 1)`)
 
 2. 如果两个数组在某个维度的 size 不一致且其中一个数组的 size 为 `1`, 那么就将 size 为 `1`
 的数组沿着这个维度复制, 直到 size 和另一个数组一致.
@@ -84,4 +84,5 @@ ps. indexing 时尽量使用 array 而不是 python 自带的 list, 因为 `a[id
 等价于 `a[[idx0, idx1, ...]]` 而不等价于 `a[np.array([idx0, idx1, ...])`. 
 
 > [Broadcasting rules](https://docs.scipy.org/doc/numpy-dev/user/quickstart.html#broadcasting-rules)
+>
 > [Fancy indexing and index tricks](https://docs.scipy.org/doc/numpy-dev/user/quickstart.html#fancy-indexing-and-index-tricks)
