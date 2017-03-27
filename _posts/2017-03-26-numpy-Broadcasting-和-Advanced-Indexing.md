@@ -61,7 +61,7 @@ Advanced Indexing 分为两种情况: 1). Integer 的数组 2). Boolean 的数�
 
         [a[2, 2], a[1, 2]]
 
-### Integer 数组和 slicing 结合
+#### Integer 数组和 slicing 结合
 
 当 index 里出现 slicing (`start:end:step`) 对象和 Integer 数组混合使用的情况时, 结果会变得比较复杂.
 
