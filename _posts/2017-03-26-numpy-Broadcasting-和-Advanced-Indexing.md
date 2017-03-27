@@ -16,7 +16,7 @@ Broadcasting 就两条规则:
 **prepend** `1`, 直到两个数组的 ndim 一样.
 
     比如: 数组 `a` 和 `b` 的 shape 分别为 `(3, 4)` 和 `(4)`,
-    那么, 根据规则一, 会将 `b` 的 shape 变成 `(1, 4)` (注意是 prepend, 所以不是变成 `(4, 1)`)
+    那么, 根据规则, 会将 `b` 的 shape 变成 `(1, 4)` (注意是 prepend, 所以不是变成 `(4, 1)`)
 
 2. 如果两个数组在某个维度的 size 不一致且其中一个数组的 size 为 `1`, 那么就将 size 为 `1`
 的数组沿着这个维度复制, 直到 size 和另一个数组一致.
@@ -75,10 +75,10 @@ Advanced Indexing 分为两种情况: 1). Integer 的数组 2). Boolean 的数�
 为 `shapeB`, 那么最终的 shape 为 `(shapeA, shapeB)`, Integer 数组最终的 shape 被提到了最前面. 比如:
 
     >>> a = np.arange(24).reshape(3, 2, 4)
-    >>> a[[0, 2], :, 1].shape
-    (2, 2)
+    >>> a[[0, 1, 2], :, 1].shape
+    (3, 2)
 
-第二种情况, Integer 数组最终的 shape 会位置在原来的位置. 比如:
+第二种情况, Integer 数组最终的 shape 会在原来的位置. 比如:
 
     >>> a = np.arange(81).reshape(3, 3, 3, 3)
     >>> a[:, [[0, 1], [0, 1]], [0, 2] , :].shape
@@ -102,18 +102,18 @@ Boolean 数组的 indexing 分为两种情况:
     (如果 `a` 中存在找不到对应 `idx` 中的值, 则视为 `False`. 如果 `idx` 中存在找不到对应 `a` 中的值, 则报错).
 
 2. 数组 `a` 接受 `a[idx0, idx1, ...]` 形式的 indexing, 其中 `idx0`, `idx1`...
-的 ndim 为 `1`. 
+的 ndim 为 `1`. 那么 `a[idx0, idx1, ...]` 等价于 `a[np.arange(idx0.size)[idx0], np.arange(idx1.size)[idx1], ...]`
 
-    `a[idx0, idx1, ...] = a[np.arange(idx0.shape[0])[idx0], np.arange(idx1.shape[0])[idx1], ...]`
-
-    也就是说使用多个 boolean 数组 indexing 时, boolean 数组会先转化成 `np.arange(<boolean 数组>.shpae[0])[<boolean 数组>]`
-    的 integer 数组.
+    也就是说使用多个 Boolean 数组 indexing 时, Boolean 数组会先转化成 `np.arange(<Boolean 数组>.size)[<Boolean 数组>]`
+    的 Integer 数组.
 
     比如:
 
-        a = np.arange(12).reshape(3, 4)
-        idx0 = np.array([True, False])
-        idx1 = np.array([False, True, True])
+        >>> a = np.arange(12).reshape(3, 4)
+        >>> idx0 = np.array([True, False])
+        >>> idx1 = np.array([False, True, True])
+        >>> a[idx0, idx1]
+        array([1, 2])
 
     那么 `a[idx0, idx1]` 等价于 `a[np.array([0]), np.array([1, 2])]` (这里会先 Broadcasting).
 
