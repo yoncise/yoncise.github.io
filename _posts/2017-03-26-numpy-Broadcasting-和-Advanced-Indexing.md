@@ -8,11 +8,11 @@ title: numpy Broadcasting 和 Advanced Indexing
 > Broadcasting allows **universal functions** to deal in a meaningful way with inputs
 > that **do not have exactly the same shape**.
 
-universal functions 简单理解就是 elementwise 的函数.
+Universal functions 简单理解就是 elementwise 的函数.
 
 Broadcasting 就两条规则:
 
-1. 如果两个 array 的 ndim 不一样, 那么就向 ndim 小的数组的 shape
+1. 如果两个数组的 ndim 不一样, 那么就向 ndim 小的数组的 shape
 **prepend** `1`, 直到两个数组的 ndim 一样.
 
     比如: 数组 `a` 和 `b` 的 shape 分别为 `(3, 4)` 和 `(4)`,
@@ -61,6 +61,37 @@ Advanced Indexing 分为两种情况: 1). Integer 的数组 2). Boolean 的数�
 
         [a[2, 2], a[1, 2]]
 
+### Integer 数组和 slicing 结合
+
+当 index 里出现 slicing (`start:end:step`) 对象和 Integer 数组混合使用的情况时, 结果会变得比较复杂.
+
+我们可以从最终结果的 shape 来理解这一情况. 当 slicing 和 Integer 数组混合使用时, 有两种情况:
+
+1. slicing 位于Integer 数组之间. 比如: `a[[0, 2], :, 1]` (这里的 `1` 相当于 `[1]`, 因为现在讨论的是 Advanced Indexing)
+
+2. Integer 数组之间没有 slicing. 比如: `a[..., [0, 1], [1, 2], :]`
+
+在第一种情况下, 我们假设多个 Integer 数组经过 Broadcasting 后的 shape 为 `shapeA`, slicing 组成的 shape
+为 `shapeB`, 那么最终的 shape 为 `(shapeA, shapeB)`, Integer 数组最终的 shape 被提到了最前面. 比如:
+
+    >>> a = np.arange(24).reshape(3, 2, 4)
+    >>> a[[0, 2], :, 1].shape
+    (2, 2)
+
+第二种情况, Integer 数组最终的 shape 会位置在原来的位置. 比如:
+
+    >>> a = np.arange(81).reshape(3, 3, 3, 3)
+    >>> a[:, [[0, 1], [0, 1]], [0, 2] , :].shape
+    (3, 2, 2, 3)
+
+下面看一个比较复杂的例子:
+
+    >>> a = np.arange(243).reshape(3, 3, 3, 3, 3)
+    >>> a[:, [[0, 1], [0, 1]], [0, 2] , :, [0, 1]].shape
+    (2, 2, 3, 3)
+
+知道了 shape 之后, indexing 的结果就比较好得出了, 根据 shape, 看对应的是哪个维度在变化就好了.
+
 ### Boolean
 
 Boolean 数组的 indexing 分为两种情况:
@@ -86,7 +117,7 @@ Boolean 数组的 indexing 分为两种情况:
 
     那么 `a[idx0, idx1]` 等价于 `a[np.array([0]), np.array([1, 2])]` (这里会先 Broadcasting).
 
-ps. indexing 时尽量使用 array 而不是 python 自带的 list, 因为 `a[idx0, idx1, ...]`
+ps. indexing 时尽量使用 ndarray 而不是 python 自带的 list, 因为 `a[idx0, idx1, ...]`
 等价于 `a[[idx0, idx1, ...]]` 而不等价于 `a[np.array([idx0, idx1, ...])`. 
 
 > [Broadcasting rules](https://docs.scipy.org/doc/numpy-dev/user/quickstart.html#broadcasting-rules)
