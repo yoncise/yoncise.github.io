@@ -36,21 +36,27 @@ title: Mac 编译 OpenJDK 7
     Ant 从 1.10 开始不再支持 Java 8 之前的版本, 我们这里是编译 OpenJDK 7,
     所以只能使用 1.9.x 或之前的版本.
 
-4. XQuartz
+4. CUPS
+
+    去[官网](https://www.cups.org)下载解压缩即可.
+
+5. XQuartz
 
     编译需要 FreeType, 直接下载 [XQuartz](https://www.xquartz.org) 安装即可.
 
-5. BootJDK
+6. BootJDK
 
     编译需要 JDK 环境 (鸡生蛋, 蛋生鸡的既视感, 编译第一个版本的 JDK 肯定是不需要 BootJDK 的),
     去 [Java SE 7 Archive Downloads](http://www.oracle.com/technetwork/java/javase/downloads/java-archive-downloads-javase7-521261.html)
     下载安装即可, 需要注意的是不要选版本号大于你源码的版本号的版本, 我选择的是 7u10 的.
 
-6. 环境变量
+7. 环境变量
 
     ``` bash
     # 让 make 找到 Ant
-    export ANT_HOME=<你 Ant 解压缩后的文件夹>
+    export ANT_HOME=<Ant 解压缩后的文件夹>
+    # CUPS
+    export ALT_CUPS_HEADERS_PATH=<CUPS 解压缩后的文件夹>
     # 设置 BootJDK
     export ALT_BOOTDIR=`/usr/libexec/java_home -v 1.7`
     # 取消 JAVA_HOME 和 CLASSPATH 变量
@@ -160,3 +166,5 @@ JDK 从 1.5 开始, 官方就不再使用类似 `JDK 1.5` 的名称了,
 > [第一章 Mac os下编译openJDK 7](http://blog.csdn.net/j754379117/article/details/53695426)
 >
 > [Mac编译OpenJDK 7](http://www.txazo.com/jvm/openjdk-compile.html)
+>
+> [Mac下编译openJDK](http://menzhongxin.com/2017/04/27/MAC下编译openJDK/)
