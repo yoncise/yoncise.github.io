@@ -25,7 +25,7 @@ jmap -dump:live,format=b,file=heap.bin <pid>
 
 #### 分析
 
-可以使用 Java 自带的 jhat 工具来分析 Heap dump:
+可以使用 Java 自带的 `jhat` 工具来分析 Heap dump:
 
 ``` bash
 jhat <heap dump file>
@@ -40,12 +40,13 @@ Server is ready.
 
 这时候浏览器中访问 `127.0.0.1:7000` 就可以了.
 
-但是, jhat 在分析较大的 Heap dump 是效率比较差, 
+但是, `jhat` 在分析较大的 Heap dump 时效率比较差, 
 所以推荐使用 eclipse 提供的 [Memory Analyzer (MAT)](http://www.eclipse.org/mat/) 来分析.
 
 ### Thread Dump
 
 Thread dump 转储的是线程相关的内存数据 (例如该线程的调用栈).
+Thread dump 有时候也被成为 javacore, 不过好像 javacore 是 IBM 虚拟机才有的.
 
 #### 生成
 
