@@ -149,6 +149,59 @@ OpenJDK Runtime Environment (build 1.7.0-internal-yoncise_2017_05_21_16_54-b00)
 OpenJDK 64-Bit Server VM (build 24.75-b04, mixed mode)
 ```
 
+### 仅编译 HotSpot
+
+大部分情况下我们关心的是 jvm 的运行情况, 所以只需要编译 HotSpot, 这样可以节省下很多编译时间.
+
+首先切换到 `hotspot/make` 目录下. 按照之前说的把环境变量设置好.
+
+修改 `bsd/makefiles/buildtree.make` 中的 `env.sh` rule. 将:
+
+```
+env.sh: $(BUILDTREE_MAKE)
+	@echo Creating $@ ...
+	$(QUIETLY) ( \
+	$(BUILDTREE_COMMENT); \
+	[ -n "$$JAVA_HOME" ] && { echo ": \$${JAVA_HOME:=$${JAVA_HOME}}"; }; \
+	{ \
+	echo "CLASSPATH=$${CLASSPATH:+$$CLASSPATH:}.:\$${JAVA_HOME}/jre/lib/rt.jar:\$${JAVA_HOME}/jre/lib/i18n.jar"; \
+	} | sed s:$${JAVA_HOME:--------}:\$${JAVA_HOME}:g; \
+	echo "HOTSPOT_BUILD_USER=\"$${LOGNAME:-$$USER} in `basename $(GAMMADIR)`\""; \
+	echo "export JAVA_HOME CLASSPATH HOTSPOT_BUILD_USER"; \
+	) > $@
+```
+
+修改成:
+
+```
+env.sh: $(BUILDTREE_MAKE)
+	@echo Creating $@ ...
+	$(QUIETLY) ( \
+	$(BUILDTREE_COMMENT); \
+	[ -n "$$JAVA_HOME" ] && { echo "JAVA_HOME=$${JAVA_HOME}"; }; \
+	{ \
+	echo "CLASSPATH=$${CLASSPATH:+$$CLASSPATH:}.:\$${JAVA_HOME}/jre/lib/rt.jar:\$${JAVA_HOME}/jre/lib/i18n.jar"; \
+	} | sed s:$${JAVA_HOME:--------}:\$${JAVA_HOME}:g; \
+	echo "HOTSPOT_BUILD_USER=\"$${LOGNAME:-$$USER} in `basename $(GAMMADIR)`\""; \
+	echo "LD_LIBRARY_PATH=."; \
+	echo "LANG=C"; \
+	echo "export JAVA_HOME CLASSPATH HOTSPOT_BUILD_USER LD_LIBRARY_PATH LANG"; \
+	) > $@
+```
+
+然后运行 `make` 编译. 建议第一次编译把输出重定向到 `/dev/null`, 编译会加快不少.
+
+编译成功后, 切换到 `./build/bsd/bsd_amd64_compiler2/product` 目录, 运行:
+
+```
+# 设置环境变量
+. ./env.sh
+# 运行 test_gamma 需要设置环境变量 LANG=C, 不然会报 NPE
+./test_gamma
+```
+
+正常输出不报错就说明编译好了. 该目录下的 `./gamma` 就是 HotSpot 的启动程序.
+
 ### 版本号
 
 JDK 从 1.5 开始, 官方就不再使用类似 `JDK 1.5` 的名称了, 
