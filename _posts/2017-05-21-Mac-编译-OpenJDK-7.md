@@ -155,7 +155,7 @@ OpenJDK 64-Bit Server VM (build 24.75-b04, mixed mode)
 
 首先切换到 `hotspot/make` 目录下. 按照之前说的把环境变量设置好.
 
-修改 `bsd/makefiles/buildtree.make` 中的 `env.sh` rule. 将:
+修改 `./bsd/makefiles/buildtree.make` 中的 `env.sh` rule. 将:
 
 ```
 env.sh: $(BUILDTREE_MAKE)
@@ -191,7 +191,7 @@ env.sh: $(BUILDTREE_MAKE)
 
 然后运行 `make` 编译. 建议第一次编译把输出重定向到 `/dev/null`, 编译会加快不少.
 
-编译成功后, 切换到 `./build/bsd/bsd_amd64_compiler2/product` 目录, 运行:
+编译成功后, 切换到 `hotspot/build/bsd/bsd_amd64_compiler2/product` 目录, 运行:
 
 ```
 # 设置环境变量
