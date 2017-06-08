@@ -122,6 +122,6 @@ jmap <executable> <core dump file>
 ```
 
 这里的 `<executable>` 指的是你运行 Java 程序时使用的 `java`, 一般可以用 `$JAVA_HOME/bin/java` 代替.
-如果你制定的 `java` 和你运行用的 `java` 不是同一个版本, 就会抛出 `sun.jvm.hotspot.debugger.UnmappedAddressException`.
+如果你指定的 `java` 和你运行用的 `java` 不是同一个版本, 就会抛出 `sun.jvm.hotspot.debugger.UnmappedAddressException`.
 
 另外你使用的 `jstack` 和 `jamp` 也需要是相应的版本, 否则会提示 `Can't attach to the core file`.
