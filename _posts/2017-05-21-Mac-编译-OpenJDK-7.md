@@ -240,3 +240,5 @@ JDK 从 1.5 开始, 官方就不再使用类似 `JDK 1.5` 的名称了,
 > [Mac编译OpenJDK 7](http://www.txazo.com/jvm/openjdk-compile.html)
 >
 > [Mac下编译openJDK](http://menzhongxin.com/2017/04/27/MAC下编译openJDK/)
+>
+> [libosxapp.dylib fails to build on Mac OS 10.9 with clang](https://bugs.openjdk.java.net/browse/JDK-8043646)
