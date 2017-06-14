@@ -59,6 +59,8 @@ title: Mac 编译 OpenJDK 7
     export ALT_CUPS_HEADERS_PATH=<CUPS 解压缩后的文件夹>
     # 设置 BootJDK
     export ALT_BOOTDIR=`/usr/libexec/java_home -v 1.7`
+    # 生成 debug 版本
+    export SKIP_DEBUG_BUILD=false
     # 取消 JAVA_HOME 和 CLASSPATH 变量
     unset JAVA_HOME
     unset CLASSPATH
@@ -139,6 +141,23 @@ error: JavaNativeFoundation/JavaNativeFoundation.h: No such file or directory
     这个问题应该是 BootJDK 有问题导致的, 我系统原先就装有 7u65, 
     把该版本作为 BootJDK 编译后报这个错误,
     重新下载了 7u10 安装, 然后修改 `ALT_BOOTDIR` 到对应的版本就解决了.
+
+7. ```
+Undefined symbols for architecture x86_64:
+"_attachCurrentThread", referenced from:
+    +[ThreadUtilities getJNIEnv] in ThreadUtilities.o
+    +[ThreadUtilities getJNIEnvUncached] in ThreadUtilities.o
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+```
+
+    当定义了环境变量 `SKIP_DEBUG_BUILD=false` 时会报这个错误.
+
+    打开 `/jdk/src/macosx/native/sun/osxapp/ThreadUtilities.m`, 将:
+    
+    `inline void attachCurrentThread(void** env) {` 修成成:
+
+    `static inline void attachCurrentThread(void** env) {`
 
 填完上面的这些坑, 应该就能编译成功了. 
 编译好之后运行 `./build/macosx-x86_64/bin/java -version` 如果输出类似下面的信息就说明编译成功了:
