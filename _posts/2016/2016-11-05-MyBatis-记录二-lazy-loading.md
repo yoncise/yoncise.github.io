@@ -7,8 +7,11 @@ date: 2016-11-05 23:01:00
 *基于 v3.4.1*
 
 为了映射对象中复杂的关联对象, 我们在 ResultMap 中可以配置 association 和 collection.
-这两者的实现方式可以通过 1. 再请求一次 `select` (Nested Select)
+这两者的实现方式可以通过 
+
+1. 再请求一次 `select` (Nested Select)
 2. 通过 `join` 将所有的属性读取出来 (Nested Results). 
+
 但有时候我们并不会使用到对象中所有的属性, 所以这些额外的从数据库拉来的数据就浪费了.
 对于通过 `select` 实现的方式我们可以使用懒加载来提升效率.
 
