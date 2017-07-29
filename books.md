@@ -20,7 +20,10 @@ title: Books
 - [Options,Futures,and Other Derivatives](https://www.amazon.cn/dp/B005GXVTGU):
 我会读完这本书的!
 
-- [深入理解Java虚拟机](https://book.douban.com/subject/24722612/):
+- [深入理解Java虚拟机](https://www.amazon.cn/dp/B00D2ID4PK):
 相见恨晚!
+
+- [The C Programming Language](https://www.amazon.cn/dp/B0011C9OMG):
+深入浅出! 同样是语言之父, 写作水平比 Bjarne Stroustrup 不知道高到哪里去了.
 
 *Cont'd*
