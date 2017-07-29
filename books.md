@@ -20,7 +20,7 @@ title: Books
 - [Options,Futures,and Other Derivatives](https://www.amazon.cn/dp/B005GXVTGU):
 我会读完这本书的!
 
-- [深入理解Java虚拟机](https://book.douban.com/subject/24722612/)
+- [深入理解Java虚拟机](https://book.douban.com/subject/24722612/):
 相见恨晚!
 
 *Cont'd*
