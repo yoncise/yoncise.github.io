@@ -37,9 +37,9 @@ Broadcasting 就两条规则:
 
 所谓 Advanced Indexing 就是, `a[obj]` 中的 `obj` 属于下面三种情况:
 
-1. 不是 tuple
+1. 不是 tuple 的 sequence
 2. 是 ndarray (值为 Integer 或 Boolean)
-3. 是一个 tuple 但其中的值至少有一个是 sequence 或 ndarray (值为 Integer 或 Boolean)
+3. 是一个 tuple 但其中的值除了包括 int 和 slicing, 至少有一个是 sequence 或 ndarray (值为 Integer 或 Boolean)
 
 Advanced Indexing 分为两种情况: 1). Integer 的数组 2). Boolean 的数组.
 
@@ -117,8 +117,8 @@ Boolean 数组的 indexing 分为两种情况:
 
     那么 `a[idx0, idx1]` 等价于 `a[np.array([0]), np.array([1, 2])]` (这里会先 Broadcasting).
 
-ps. indexing 时尽量使用 ndarray 而不是 python 自带的 list, 因为 `a[idx0, idx1, ...]`
-等价于 `a[[idx0, idx1, ...]]` 而不等价于 `a[np.array([idx0, idx1, ...])`. 
+ps. indexing 时尽量使用 ndarray 而不是 python 自带的 list, 因为 `a[[idx0, idx1, ...]]`
+等价于 `a[idx0, idx1, ...]` 而不等价于 `a[np.array([idx0, idx1, ...])`. 
 
 > [Broadcasting rules](https://docs.scipy.org/doc/numpy-dev/user/quickstart.html#broadcasting-rules)
 >
