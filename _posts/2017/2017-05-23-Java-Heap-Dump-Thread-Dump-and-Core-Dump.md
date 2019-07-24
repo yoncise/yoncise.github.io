@@ -46,7 +46,7 @@ Server is ready.
 ### Thread Dump
 
 Thread dump 转储的是线程相关的内存数据 (例如该线程的调用栈).
-Thread dump 有时候也被成为 javacore, 不过好像 javacore 是 IBM 虚拟机才有的.
+Thread dump 有时候也被称为 javacore, 不过好像 javacore 是 IBM 虚拟机才有的.
 
 #### 生成
 
