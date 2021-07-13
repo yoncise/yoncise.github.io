@@ -136,6 +136,12 @@ hr {
   border-bottom: 1px solid #fff;
 }
 
+abbr {
+  font-size: 85%;
+  font-weight: bold;
+  color: #555;
+  text-transform: uppercase;
+}
 abbr[title] {
   cursor: help;
   border-bottom: 1px dotted #e5e5e5;
@@ -222,7 +228,10 @@ blockquote p:last-child {
 }
 
 img {
+  display: block;
   max-width: 100%;
+  margin: 0 0 1rem;
+  border-radius: 5px;
 }
 
 /* Tables */
