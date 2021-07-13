@@ -1,0 +1,3 @@
+# 屏蔽列表页 e.g. xxx/page2/
+User-agent: *
+Disallow: /page*/
