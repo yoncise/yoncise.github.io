@@ -17,7 +17,7 @@ DNS 是一套系统, 负责将域名与 IP 地址相对应起来.
 
     假如有一个域名 bob.sales.example.com, 那么 com 是一个顶级域名(<acronym title="Top Level Domain">TLD</acronym>), 
 example 是 com 的一个子域名(Sub-domain), sales 是 example 的子域名, bob 则是一个主机名(Hostname). 一个域名至少有一个子域名.
-除了主机名, 一个域名的其它部分都可以叫做 Zone. 
+除了主机名, 一个域名的其它部分都可以叫做 Zone. [1]
 
 ## Nameserver 类型
 
@@ -65,4 +65,4 @@ Google 的 nameserver(8.8.8.8) 就是这种类型.
 
 ## 参考
 
-> [Introduction to DNS](http://www.centos.org/docs/5/html/5.2/Deployment_Guide/s1-bind-introduction.html)
+> [1] [13.1.1. Nameserver Zones](https://web.mit.edu/rhel-doc/3/rhel-rg-en-3/ch-bind.html)
