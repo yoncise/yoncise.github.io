@@ -21,12 +21,10 @@ layout: default
 {% assign diaries = site.pages | where:"layout", "diary" | sort: "name" %}
 {% for diary in diaries %}
   {% if page.url == diary.url  %}
-    {% if forloop.index == 1 %}
-        {% assign prev = nil %}
-    {% else %}
-        {% assign prev_idx = forloop.index | plus: -1 %}
+    {% unless forloop.index == 1 %}
+        {% assign prev_idx = forloop.index | plus: -2 %}
         {% assign prev = diaries[prev_idx] %}
-    {% endif %}
+    {% endunless %}
     {% assign next = diaries[forloop.index] %}
     {% break %}
   {% endif %}
