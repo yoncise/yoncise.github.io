@@ -3,19 +3,20 @@ layout: default
 ---
 {% assign page_year = page.name | split: "." | first %}
 
+<h1>{{ page.title }}</h1>
 <div class="posts">
+  <ul>
   {% for post in site.categories.logs %}
   {% assign post_year = post.date | date: "%Y" %}
   {% if page_year == post_year %}
-  <div class="post">
-    <h1 class="post-title">
+    <li>
       <a href="{{ post.url | absolute_url }}">
         {{ post.title }}
       </a>
-    </h1>
-  </div>
+    </li>
   {% endif %}
   {% endfor %}
+  </ul>
 </div>
 
 {% assign logs = site.pages | where:"layout", "logs" | sort: "name" %}
