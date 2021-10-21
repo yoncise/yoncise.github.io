@@ -12,6 +12,14 @@ author:
   name:              YAO YUAN
   email:             yoncise@gmail.com
 
+defaults:
+  -
+    scope:
+      path: "logs"
+      type: "posts"
+    values:
+      hidden: true
+
 # Gems
 plugins:
   - jekyll-paginate
