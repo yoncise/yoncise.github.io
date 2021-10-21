@@ -11,8 +11,8 @@
   <nav class="sidebar-nav">
     <a class="sidebar-nav-item{% if page.title == 'Home' %} active{% endif %}" href="{{ '/' | absolute_url }}">Home</a>
 
-    {% assign diaries = site.pages | where: "layout", "diary_idx" | sort: "name" | last %}
-    <a class="sidebar-nav-item{% if page.url == diaries.url %} active{% endif %}" href="{{ diaries.url | absolute_url }}">Diaries</a>
+    {% assign logs = site.pages | where: "layout", "logs" | sort: "name" | last %}
+    <a class="sidebar-nav-item{% if page.url == logs.url %} active{% endif %}" href="{{ logs.url | absolute_url }}">Logs</a>
 
     {% comment %}
       The code below dynamically generates a sidebar nav of pages with

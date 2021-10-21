@@ -4,7 +4,7 @@ layout: default
 {% assign page_year = page.name | split: "." | first %}
 
 <div class="posts">
-  {% for post in site.categories.diaries %}
+  {% for post in site.categories.logs %}
   {% assign post_year = post.date | date: "%Y" %}
   {% if page_year == post_year %}
   <div class="post">
@@ -18,26 +18,26 @@ layout: default
   {% endfor %}
 </div>
 
-{% assign idx_list = site.pages | where:"layout", "diary_idx" | sort: "name" %}
-{% for idx in idx_list %}
-  {% if page.url == idx.url  %}
+{% assign logs = site.pages | where:"layout", "logs" | sort: "name" %}
+{% for l in logs %}
+  {% if page.url == l.url  %}
     {% unless forloop.index == 1 %}
-        {% assign prev = forloop.index | plus: -2 %}
-        {% assign prev_idx = idx_list[prev] %}
+        {% assign prev_idx = forloop.index | plus: -2 %}
+        {% assign prev = logs[prev_idx] %}
     {% endunless %}
-    {% assign next_idx = idx_list[forloop.index] %}
+    {% assign next = logs[forloop.index] %}
     {% break %}
   {% endif %}
 {% endfor %}
 
 <div class="pagination">
-  {% if prev_idx %}
-    <a class="pagination-item older" href="{{ prev_idx.url | absolute_url }}">Older</a>
+  {% if prev %}
+    <a class="pagination-item older" href="{{ prev.url | absolute_url }}">Older</a>
   {% else %}
     <span class="pagination-item older">Older</span>
   {% endif %}
-  {% if next_idx %}
-    <a class="pagination-item newer" href="{{ next_idx.url | absolute_url }}">Newer</a>
+  {% if next %}
+    <a class="pagination-item newer" href="{{ next.url | absolute_url }}">Newer</a>
   {% else %}
     <span class="pagination-item newer">Newer</span>
   {% endif %}
