@@ -559,6 +559,14 @@ a.pagination-item:hover {
 
 /* for logs */
 
+.logs {
+    margin-bottom: 3rem;
+}
+
+.logs .post {
+    margin-bottom: 0.8rem;
+}
+
 .logs .post-date {
   margin: 0;
   font-style: italic;
