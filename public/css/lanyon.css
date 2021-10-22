@@ -569,9 +569,3 @@ a.pagination-item:hover {
   margin: 0;
   font-style: italic;
 }
-
-@media (min-width: 56em) {
-  .logs .post-date {
-    float: right;
-  }
-}
