@@ -48,7 +48,7 @@ function wa_lua_on_handshake_cb(ctx)
                     'Host: ' .. host .. ':' .. port .. '\r\n' ..
                     'Proxy-Connection: Keep-Alive\r\n'..
                     'X-T5-Auth: YTY0Nzlk\r\n' ..
-                    'User-Agent: BaiduBoxApp/13.6.0 iPhone; CPU iPhone OS 15_3 like Mac OS X\r\n\r\n'
+                    'User-Agent: okhttp/3.11.0 Dalvik/2.1.0 (iPhone; CPU iPhone OS 15_3 like Mac OS X) baiduboxapp/11.0.5.12 (Baidu; P1 11)\r\n\r\n'
         ctx_write(ctx, res)
         flags[uuid] = kHttpHeaderSent
     end
