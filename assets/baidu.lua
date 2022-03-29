@@ -45,9 +45,10 @@ function wa_lua_on_handshake_cb(ctx)
         local host = ctx_address_host(ctx)
         local port = ctx_address_port(ctx)
         local res = 'CONNECT ' .. host .. ':' .. port .. ' HTTP/1.1\r\n' ..
-                    'Host: a.189.cn\r\n' ..
+                    'Host: ' .. host .. ':' .. port .. '\r\n' ..
                     'Proxy-Connection: Keep-Alive\r\n'..
-                    'Proxy-Authorization: Basic dWMxMC4xOTQuMTg3LjIyMDoxZjQ3ZDNlZjUzYjAzNTQ0MzQ1MWM3ZWU3ODczZmYzOA==\r\n\r\n'
+                    'X-T5-Auth: YTY0Nzlk\r\n' ..
+                    'User-Agent: okhttp/3.11.0 Dalvik/2.1.0 (iPhone; CPU iPhone OS 15_3 like Mac OS X) baiduboxapp/11.0.5.12 (Baidu; P1 11)\r\n\r\n'
         ctx_write(ctx, res)
         flags[uuid] = kHttpHeaderSent
     end
