@@ -155,6 +155,10 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-transition: all .3s ease-in-out;
           transition: all .3s ease-in-out;
 }
+.sidebar.right-sidebar {
+  left: auto;
+  right: -14rem;
+}
 @media (min-width: 30em) {
   .sidebar {
     font-size: .75rem; /* 14px */
@@ -221,6 +225,11 @@ a.sidebar-nav-item:focus {
   background-color: #fff;
   border-radius: .25rem;
   cursor: pointer;
+}
+
+.sidebar-toggle.right-sidebar-toggle {
+  left: auto;
+  right: 1rem;
 }
 
 .sidebar-toggle::before {
@@ -293,15 +302,19 @@ a.sidebar-nav-item:focus {
 }
 #sidebar-checkbox:checked ~ .sidebar,
 #sidebar-checkbox:checked ~ .wrap,
-#sidebar-checkbox:checked ~ .sidebar-toggle,
-#right-sidebar-checkbox:checked ~ .sidebar,
-#right-sidebar-checkbox:checked ~ .wrap,
-#right-sidebar-checkbox:checked ~ .sidebar-toggle {
+#sidebar-checkbox:checked ~ .sidebar-toggle {
   -webkit-transform: translateX(14rem);
       -ms-transform: translateX(14rem);
           transform: translateX(14rem);
 }
 
+#right-sidebar-checkbox:checked ~ .sidebar,
+#right-sidebar-checkbox:checked ~ .wrap,
+#right-sidebar-checkbox:checked ~ .sidebar-toggle {
+  -webkit-transform: translateX(-14rem);
+      -ms-transform: translateX(-14rem);
+          transform: translateX(-14rem);
+}
 
 /*
  * Posts and pages
@@ -430,13 +443,28 @@ a.pagination-item:hover {
 
 .layout-reverse #sidebar-checkbox:checked ~ .sidebar,
 .layout-reverse #sidebar-checkbox:checked ~ .wrap,
-.layout-reverse #sidebar-checkbox:checked ~ .sidebar-toggle,
-.layout-reverse #right-sidebar-checkbox:checked ~ .sidebar,
-.layout-reverse #right-sidebar-checkbox:checked ~ .wrap,
-.layout-reverse #right-sidebar-checkbox:checked ~ .sidebar-toggle {
+.layout-reverse #sidebar-checkbox:checked ~ .sidebar-toggle {
   -webkit-transform: translateX(-14rem);
       -ms-transform: translateX(-14rem);
           transform: translateX(-14rem);
+}
+
+
+.layout-reverse .sidebar.right-sidebar {
+  left: -14rem;
+  right: auto;
+}
+.layout-reverse .sidebar-toggle.right-sidebar {
+  left: 1rem;
+  right: auto;
+}
+
+.layout-reverse #right-sidebar-checkbox:checked ~ .sidebar,
+.layout-reverse #right-sidebar-checkbox:checked ~ .wrap,
+.layout-reverse #right-sidebar-checkbox:checked ~ .sidebar-toggle {
+  -webkit-transform: translateX(14rem);
+      -ms-transform: translateX(14rem);
+          transform: translateX(14rem);
 }
 
 
