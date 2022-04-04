@@ -244,7 +244,7 @@ a.sidebar-nav-item:focus {
 }
 
 .sidebar-toggle.right-sidebar-toggle::before {
-  background: url("//badges.strava.com/echelon-sprite-24.png") no-repeat;
+  background: url("//badges.strava.com/echelon-sprite-32.png") no-repeat;
 }
 
 #sidebar-toggle:active,
