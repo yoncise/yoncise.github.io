@@ -157,7 +157,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 .sidebar.right-sidebar {
   left: auto;
-  right: -14rem;
+  right: -16rem;
+  width: 16rem;
+  text-align: center;
+  background: #fff;
 }
 @media (min-width: 30em) {
   .sidebar {
@@ -244,16 +247,14 @@ a.sidebar-nav-item:focus {
   background: url("//badges.strava.com/echelon-sprite-32.png") no-repeat;
 }
 
-.sidebar-toggle:active,
+#sidebar-toggle:active,
 #sidebar-checkbox:focus ~ #sidebar-toggle,
-#sidebar-checkbox:checked ~ #sidebar-toggle,
-#right-sidebar-checkbox:focus ~ #right-sidebar-toggle,
-#right-sidebar-checkbox:checked ~ #right-sidebar-toggle {
+#sidebar-checkbox:checked ~ #sidebar-toggle {
   color: #fff;
   background-color: #555;
 }
 
-.sidebar-toggle:active:before,
+#sidebar-toggle:active:before,
 #sidebar-checkbox:focus ~ #sidebar-toggle::before,
 #sidebar-checkbox:checked ~ #sidebar-toggle::before {
   background: url("data:image/svg+xml,%3Csvg viewBox='0 0 16 16' fill='%23fff' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' d='M2.5 11.5A.5.5 0 013 11h10a.5.5 0 010 1H3a.5.5 0 01-.5-.5zm0-4A.5.5 0 013 7h10a.5.5 0 010 1H3a.5.5 0 01-.5-.5zm0-4A.5.5 0 013 3h10a.5.5 0 010 1H3a.5.5 0 01-.5-.5z' clip-rule='evenodd'/%3E%3C/svg%3E") no-repeat;
@@ -313,9 +314,9 @@ a.sidebar-nav-item:focus {
 #right-sidebar-checkbox:checked ~ .sidebar,
 #right-sidebar-checkbox:checked ~ .wrap,
 #right-sidebar-checkbox:checked ~ .sidebar-toggle {
-  -webkit-transform: translateX(-14rem);
-      -ms-transform: translateX(-14rem);
-          transform: translateX(-14rem);
+  -webkit-transform: translateX(-16rem);
+      -ms-transform: translateX(-16rem);
+          transform: translateX(-16rem);
 }
 
 /*
@@ -453,7 +454,7 @@ a.pagination-item:hover {
 
 
 .layout-reverse .sidebar.right-sidebar {
-  left: -14rem;
+  left: -16rem;
   right: auto;
 }
 .layout-reverse .sidebar-toggle.right-sidebar {
@@ -464,9 +465,9 @@ a.pagination-item:hover {
 .layout-reverse #right-sidebar-checkbox:checked ~ .sidebar,
 .layout-reverse #right-sidebar-checkbox:checked ~ .wrap,
 .layout-reverse #right-sidebar-checkbox:checked ~ .sidebar-toggle {
-  -webkit-transform: translateX(14rem);
-      -ms-transform: translateX(14rem);
-          transform: translateX(14rem);
+  -webkit-transform: translateX(16rem);
+      -ms-transform: translateX(16rem);
+          transform: translateX(16rem);
 }
 
 
