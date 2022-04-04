@@ -241,10 +241,10 @@ a.sidebar-nav-item:focus {
 }
 
 .sidebar-toggle:active,
-#sidebar-checkbox:focus ~ .sidebar-toggle,
-#sidebar-checkbox:checked ~ .sidebar-toggle,
-#right-sidebar-checkbox:focus ~ .sidebar-toggle,
-#right-sidebar-checkbox:checked ~ .sidebar-toggle {
+#sidebar-checkbox:focus ~ #sidebar-toggle,
+#sidebar-checkbox:checked ~ #sidebar-toggle,
+#right-sidebar-checkbox:focus ~ #right-sidebar-toggle,
+#right-sidebar-checkbox:checked ~ #right-sidebar-toggle {
   color: #fff;
   background-color: #555;
 }
