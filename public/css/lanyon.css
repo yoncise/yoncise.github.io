@@ -244,8 +244,7 @@ a.sidebar-nav-item:focus {
 }
 
 .sidebar-toggle.right-sidebar-toggle::before {
-  filter: grayscale(1);
-  background: url("/public/strava-logo-32.png") no-repeat;
+  background: url("/public/strava-logo-gray-32.png") no-repeat;
 }
 
 #sidebar-toggle:active,
@@ -261,7 +260,7 @@ a.sidebar-nav-item:focus {
 
 #right-sidebar-toggle:active:before,
 #right-sidebar-checkbox:checked ~ #right-sidebar-toggle::before {
-  filter: none;
+  background: url("/public/strava-logo-32.png") no-repeat;
 }
 
 @media (min-width: 30.1em) {
