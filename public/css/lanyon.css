@@ -244,8 +244,8 @@ a.sidebar-nav-item:focus {
 }
 
 .sidebar-toggle.right-sidebar-toggle::before {
-  opacity: 0.5;
-  background: url("//badges.strava.com/echelon-sprite-32.png") no-repeat;
+  filter: grayscale(1);
+  background: url("/public/strava-logo-32.png") no-repeat;
 }
 
 #sidebar-toggle:active,
@@ -262,7 +262,7 @@ a.sidebar-nav-item:focus {
 #right-sidebar-toggle:active:before,
 #right-sidebar-toggle:hover:before,
 #right-sidebar-checkbox:checked ~ #right-sidebar-toggle::before {
-  opacity: 1;
+  filter: none;
 }
 
 @media (min-width: 30.1em) {
