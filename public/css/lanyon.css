@@ -260,7 +260,6 @@ a.sidebar-nav-item:focus {
 }
 
 #right-sidebar-toggle:active:before,
-#right-sidebar-toggle:hover:before,
 #right-sidebar-checkbox:checked ~ #right-sidebar-toggle::before {
   filter: none;
 }
