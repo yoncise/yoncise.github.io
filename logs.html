@@ -1,0 +1,48 @@
+---
+layout: default
+title: Logs
+---
+{% assign latest_logs = site.pages | where: "layout", "logs" | sort: "name" | last %}
+{% assign page_year = latest_logs.name | split: "." | first %}
+
+<div class="logs">
+  <h2>// {{ page_year }}</h2>
+  {% for post in site.categories.logs %}
+  {% assign post_year = post.date | date: "%Y" %}
+  {% if page_year == post_year %}
+  <div class="post">
+      <div class="post-date">
+          <span>{{ post.date | date: "%b %d" }}</span>
+      </div>
+      <h4 class="post-title">
+          <a href="{{ post.url | absolute_url }}">{{ post.title }}</a>
+      </h4>
+  </div>
+  {% endif %}
+  {% endfor %}
+</div>
+
+{% assign logs = site.pages | where:"layout", "logs" | sort: "name" %}
+{% for l in logs %}
+  {% if latest_logs.url == l.url  %}
+    {% unless forloop.index == 1 %}
+        {% assign prev_idx = forloop.index | plus: -2 %}
+        {% assign prev = logs[prev_idx] %}
+    {% endunless %}
+    {% assign next = logs[forloop.index] %}
+    {% break %}
+  {% endif %}
+{% endfor %}
+
+<div class="pagination">
+  {% if prev %}
+    <a class="pagination-item older" href="{{ prev.url | absolute_url }}">Older</a>
+  {% else %}
+    <span class="pagination-item older">Older</span>
+  {% endif %}
+  {% if next %}
+    <a class="pagination-item newer" href="{{ next.url | absolute_url }}">Newer</a>
+  {% else %}
+    <span class="pagination-item newer">Newer</span>
+  {% endif %}
+</div>
