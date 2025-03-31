@@ -21,19 +21,16 @@
   <!-- MathJax -->
   <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
   <script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-      tex2jax: {
-        inlineMath: [['$', '$'], ['\\(', '\\)']],
-        displayMath: [['$$', '$$'], ['\\[', '\\]']]
-      },
-      "HTML-CSS": {
-        scale: 100, // global scaling factor
-        minScaleAdjust: 20 // minimum scaling factor for text
-      },
-      SVG: {
-        scale: 100, // global scaling factor
-        minScaleAdjust: 20 // minimum scaling factor for text
-      }
+    MathJax.Hub.Queue(function() {
+        document.querySelectorAll('span[id^="MathJax-Element"]').forEach(function(e) {
+            parentWidth = e.parentNode.offsetWidth;
+            if (e.parentNode.className.endsWith('isplay')) {
+                parentWidth = e.parentNode.parentNode.offsetWidth;
+            }
+            if (e.offsetWidth > parentWidth) {
+                e.style.fontSize = parentWidth * 100 / e.offsetWidth + '%';
+            }
+        });
     });
   </script>
   <link rel="stylesheet" href="{{ '/public/css/poole.css' | absolute_url }}">
