@@ -24,7 +24,7 @@
     MathJax.Hub.Queue(function() {
         document.querySelectorAll('span[id^="MathJax-Element"]').forEach(function(e) {
             parentWidth = e.parentNode.offsetWidth;
-            if (e.parentNode.className.endsWith('isplay')) {
+            if (e.parentNode.className.endsWith('_Display')) {
                 parentWidth = e.parentNode.parentNode.offsetWidth;
             }
             if (e.offsetWidth > parentWidth) {
