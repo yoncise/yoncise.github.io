@@ -332,7 +332,7 @@ a.sidebar-nav-item:focus {
 
 .page,
 .post {
-  margin-bottom: 1em;
+  margin-bottom: 3em;
 }
 
 /* Blog post or page title */
@@ -616,17 +616,17 @@ a.pagination-item:hover {
   box-shadow: -.25rem 0 .5rem rgba(0,0,0,.1);
 }
 
-/* for logs */
+/* for toc */
 
-.logs {
+.toc {
     margin-bottom: 3rem;
 }
 
-.logs .post {
+.toc .post {
     margin-bottom: 0.8rem;
 }
 
-.logs .post-date {
+.toc .post-date {
   margin: 0;
   font-style: italic;
 }
