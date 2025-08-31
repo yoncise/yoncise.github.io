@@ -3,9 +3,9 @@ layout: default
 title: Home
 ---
 
-<div class="posts">
+<div class="toc">
   {% for post in paginator.posts %}
-  <div class="toc">
+  <div class="post">
     <span class="post-date">{{ post.date | date_to_string }}</span>
     <h4 class="post-title">
       <a href="{{ post.url | absolute_url }}">
