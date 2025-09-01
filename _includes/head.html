@@ -21,6 +21,11 @@
   <!-- MathJax -->
   <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
   <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        "HTML-CSS": {
+            preferredFont: "TeX"
+        }
+    });
     MathJax.Hub.Queue(function() {
         document.querySelectorAll('span[id^="MathJax-Element"]').forEach(function(e) {
             parentWidth = e.parentNode.offsetWidth;
